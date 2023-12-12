@@ -7,11 +7,8 @@ type Props = {
   photoSources: string[];
 };
 const CustomCarousel = ({ photoSources }: Props) => {
-  console.log(photoSources);
-
   const renderArrowNext = (clickHandler, hasNext, labelNext) => {
     if (!hasNext) return;
-    console.log(hasNext);
     return (
       <button onClick={clickHandler}>
         <img
@@ -36,7 +33,7 @@ const CustomCarousel = ({ photoSources }: Props) => {
     <Carousel>
       {photoSources.length > 1 &&
         photoSources.map((s) => (
-          <div>
+          <div key={s}>
             <img src={s} />
           </div>
         ))}

@@ -11,7 +11,7 @@ const YoutubeVideo = ({ title, src, slug, type }: Props) => {
   const video = (
     <div
       className="w-full"
-      style={{ height: type === "main-video" ? "56vw" : "25rem" }}
+      style={{ height: type === "main-video" ? "56vw" : "26rem" }}
     >
       {" "}
       <iframe
