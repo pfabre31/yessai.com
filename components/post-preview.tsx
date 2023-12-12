@@ -1,13 +1,17 @@
+//@ts-nocheck
 import Avatar from "./avatar";
 import DateFormatter from "./date-formatter";
 import CoverImage from "./cover-image";
 import Link from "next/link";
 import type Author from "../interfaces/author";
+import Video from "./youtube-video";
 
 type Props = {
-  type: "video" | "photo";
+  type: "past-show" | "studio-outtake";
+  media: "video" | "photo";
   title: string;
   coverImage: string;
+  videoSrc: string;
   date: string;
   excerpt: string;
   author: Author;
@@ -16,27 +20,33 @@ type Props = {
 
 const PostPreview = ({
   type,
+  media,
   title,
   coverImage,
+  videoSrc,
   date,
   excerpt,
   author,
   slug,
 }: Props) => {
-  console.log(type);
   return (
-    <div>
+    <div className="mb-3">
       <div className="mb-5">
-        {type === "photo" ? (
+        {media === "photo" ? (
           <CoverImage slug={slug} title={title} src={coverImage} />
         ) : (
-          <div>Ouais</div>
+          <Video title={title} src={videoSrc} slug={slug} type={type}></Video>
         )}
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">{title}</h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
-      </div>
+      {type !== "studio-outtake" && (
+        <h3 className="text-3xl mb-3 leading-snug post-title">{title}</h3>
+      )}
+      {type === "past-show" && (
+        <div className="text-lg mb-4 date">
+          <DateFormatter dateString={date} />
+        </div>
+      )}
+
       {/* <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} /> */}
     </div>

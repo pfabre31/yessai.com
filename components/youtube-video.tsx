@@ -4,16 +4,20 @@ type Props = {
   title: string;
   src: string;
   slug?: string;
+  type: string | undefined;
 };
 
-const Video = ({ title, src, slug }: Props) => {
+const YoutubeVideo = ({ title, src, slug, type }: Props) => {
   const video = (
-    <div className="w-full" style={{ height: "56vw" }}>
+    <div
+      className="w-full"
+      style={{ height: type === "main-video" ? "56vw" : "25rem" }}
+    >
       {" "}
       <iframe
         width="100%"
         height="100%"
-        src={`https://www.youtube.com/embed/9Mov_Ul8Gf4?hd=1`}
+        src={src}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -24,4 +28,4 @@ const Video = ({ title, src, slug }: Props) => {
   return <div className="sm:mx-0">{video}</div>;
 };
 
-export default Video;
+export default YoutubeVideo;

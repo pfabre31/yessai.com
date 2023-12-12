@@ -1,11 +1,13 @@
 import type Author from "./author";
 
 type PostType = {
-  type: "video" | "photo";
+  type: "past-show" | "studio-outtake";
+  media: "video" | "photo";
   slug: string;
   title: string;
   date: string;
   coverImage: string;
+  videoSrc: string;
   author: Author;
   excerpt: string;
   ogImage: {

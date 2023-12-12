@@ -1,3 +1,134 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "rigSolid";
+  src: url("/fonts/rig-solid/RigSolid-BoldInline.ttf") format("truetype");
+}
+@font-face {
+  font-family: "macchiato";
+  src: url("/fonts/macchiato/Macchiato Bold Inline.ttf") format("truetype");
+}
+@font-face {
+  font-family: "modern-neon";
+  src: url("/fonts/modern-neon/modernNeon.otf") format("truetype");
+}
+@font-face {
+  font-family: "black-butcher";
+  src: url("/fonts/black-butcher/blackButcher.otf") format("truetype");
+}
+@font-face {
+  font-family: "chunky-retro";
+  src: url("/fonts/chunky-retro/chunkyRetro.otf") format("truetype");
+}
+@font-face {
+  font-family: "de-latto";
+  src: url("/fonts/de-latto/deLatto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "john-lennon";
+  src: url("/fonts/john-lennon/johnLennon.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nugelo";
+  src: url("/fonts/nugelo/Nugelo-regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "retro-cool";
+  src: url("/fonts/retro-cool/retroCool.ttf") format("truetype");
+}
+@font-face {
+  font-family: "shine-coasty";
+  src: url("/fonts/shine-coasty/shineCoasty.ttf") format("truetype");
+}
+@font-face {
+  font-family: "tirto-writer";
+  src: url("/fonts/tirto-writer/tirtoWriter.ttf") format("truetype");
+}
+@font-face {
+  font-family: "village";
+  src: url("/fonts/village/village.ttf") format("truetype");
+}
+@font-face {
+  font-family: "oswald";
+  src: url("/fonts/oswald/oswald.ttf") format("truetype");
+}
+@font-face {
+  font-family: "noto";
+  src: url("/fonts/noto/noto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "type-machine";
+  src: url("/fonts/type-machine/typeMachine.ttf") format("truetype");
+}
+html {
+  background-color: black;
+}
+
+.london {
+  position: absolute;
+  bottom: 24vh;
+}
+.contact-title {
+  font-family: "oswald", "Verdana", sans-serif;
+  font-size: 2.8vh;
+  color: #ece9f1;
+}
+.insta-block {
+  /* position: absolute;
+  bottom: 10vh; */
+  font-family: "oswald", "Verdana", sans-serif;
+  font-size: 1.7vh;
+  color: #ece9f1;
+}
+.mail-block {
+  /* position: absolute;
+  bottom: 5vh; */
+  font-family: "oswald", "Verdana", sans-serif;
+  font-size: 1.7vh;
+  color: #ece9f1;
+}
+
+.main-title-all {
+  font-size: 3rem !important;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  justify-content: center;
+}
+.main-title1 {
+  font-family: "modern-neon", "Oswald", "Verdana", sans-serif;
+  color: #891414;
+  font-weight: lighter;
+  font-size: 11vh !important;
+}
+.main-title2 {
+  font-family: "modern-neon", "Oswald", "Verdana", sans-serif;
+  color: #670ed5;
+  font-weight: lighter;
+  font-size: 11vh !important;
+}
+
+.music-description {
+  font-family: "shine-coasty", "oswald", "Verdana", sans-serif;
+  font-size: 2.3vh;
+}
+
+.video-block {
+  margin-top: 10vh;
+  margin-bottom: 13vh !important;
+}
+
+.section-title {
+  font-family: "shine-coasty", "Oswald", "Verdana", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.post-title {
+  font-family: "type-machine", "Oswald", "Verdana", sans-serif;
+  font-size: 2.4vh;
+}
+.date {
+  font-family: "type-machine", "Oswald", "Verdana", sans-serif;
+  font-size: 1rem;
+}
