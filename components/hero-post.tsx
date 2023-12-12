@@ -6,7 +6,7 @@ import type Author from "../interfaces/author";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImages: string;
 
   date: string;
   excerpt: string;
@@ -16,7 +16,7 @@ type Props = {
 
 const HeroPost = ({
   title,
-  coverImage,
+  coverImages,
   date,
   excerpt,
   author,

@@ -6,7 +6,7 @@ type PostType = {
   slug: string;
   title: string;
   date: string;
-  coverImage: string;
+  coverImages: string[];
   videoSrc: string;
   author: Author;
   excerpt: string;

@@ -1,16 +1,14 @@
-//@ts-nocheck
-import Avatar from "./avatar";
 import DateFormatter from "./date-formatter";
 import CoverImage from "./cover-image";
-import Link from "next/link";
 import type Author from "../interfaces/author";
 import Video from "./youtube-video";
+import CustomCarousel from "./custom-carousel";
 
 type Props = {
   type: "past-show" | "studio-outtake";
   media: "video" | "photo";
   title: string;
-  coverImage: string;
+  coverImages: string[];
   videoSrc: string;
   date: string;
   excerpt: string;
@@ -22,20 +20,23 @@ const PostPreview = ({
   type,
   media,
   title,
-  coverImage,
+  coverImages,
   videoSrc,
   date,
   excerpt,
   author,
   slug,
 }: Props) => {
+  console.log(coverImages);
   return (
     <div className="mb-3">
       <div className="mb-5">
         {media === "photo" ? (
-          <CoverImage slug={slug} title={title} src={coverImage} />
-        ) : (
+          <CoverImage slug={slug} title={title} src={coverImages[0]} />
+        ) : media === "video" ? (
           <Video title={title} src={videoSrc} slug={slug} type={type}></Video>
+        ) : (
+          <CustomCarousel photoSources={coverImages}></CustomCarousel>
         )}
       </div>
       {type !== "studio-outtake" && (

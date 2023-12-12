@@ -28,7 +28,7 @@ const StudioOuttakes = ({ posts }: Props) => {
               media={post.media}
               key={post.slug}
               title={post.title}
-              coverImage={post.coverImage}
+              coverImages={post.coverImages}
               videoSrc={post.videoSrc}
               date={post.date}
               author={post.author}
