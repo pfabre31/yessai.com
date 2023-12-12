@@ -6,7 +6,6 @@ type Props = {
 };
 
 const PastShows = ({ posts }: Props) => {
-  console.log(posts);
   return (
     <section className="mb-10 mt-10">
       <h2

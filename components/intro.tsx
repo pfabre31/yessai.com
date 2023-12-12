@@ -8,14 +8,20 @@ const Intro = () => {
         <div className="flex gap-0">
           {" "}
           <div
+            style={{ color: "#891414", marginRight: "-0.3rem" }}
+            className="main-title1 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+          >
+            P
+          </div>
+          <div
             style={{ color: "#891414" }}
             className="main-title1 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
-            Pa
+            a
           </div>
           <div
-            style={{ color: "rgb(51 11 11)" /*"#891414"*/ }}
-            className="main-title1 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+            style={{ color: "rgb(95 17 17)" /*"rgb(51 11 11)" "#891414"*/ }}
+            className="flicker-slow main-title1 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
             u
           </div>
@@ -29,20 +35,29 @@ const Intro = () => {
         <div className="flex gap-0">
           {" "}
           <div
-            style={{ color: "#8515d5" /*"#670ed5"*/ }}
+            style={{ color: "#8515d5", marginRight: "-0.8rem" /*"#670ed5"*/ }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
-            Fab
+            F
           </div>
           <div
-            style={{ color: "rgb(28 12 39)" /*"#8515d5" "#670ed5"*/ }}
+            // style={{ color: "rgb(28 12 39)" /*"#8515d5" "#670ed5"*/ }}
+            className="flicker-fast main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+          >
+            a
+          </div>
+          <div
+            style={{
+              color: "rgb(109 30 163)" /*"#8515d5"*/,
+              marginLeft: "0.3rem" /*"#670ed5"*/,
+            }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
-            r
+            br
           </div>
           <div
-            style={{ color: "#8515d5" /*"#670ed5"*/ }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+            style={{ color: "rgb(51 8 105)" /*"#8515d5" "#670ed5"*/ }}
+            className="flicker-slow main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
             e
           </div>

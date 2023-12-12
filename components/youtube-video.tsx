@@ -15,6 +15,7 @@ const YoutubeVideo = ({ title, src, slug, type }: Props) => {
     >
       {" "}
       <iframe
+        className="media"
         width="100%"
         height="100%"
         src={src}

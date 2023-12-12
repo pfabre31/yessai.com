@@ -14,14 +14,12 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const { data, content } = matter(fileContents);
-  console.log("file content " + data);
 
   type Items = {
     [key: string]: string;
   };
 
   const items: Items = {};
-  console.log("FIELDS : " + fields);
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {

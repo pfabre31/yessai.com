@@ -15,20 +15,27 @@ const StudioOuttakes = ({ posts }: Props) => {
         Studio Outtakes
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32">
-        {posts.map((post) => (
-          <PostPreview
-            type={post.type}
-            media={post.media}
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            videoSrc={post.videoSrc}
-            date={post.date}
-            author={post.author}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
-        ))}
+        {posts
+          .sort((p1, p2) => {
+            const rank1 = parseInt(p1.excerpt.split(" ")[2][1]);
+            const rank2 = parseInt(p2.excerpt.split(" ")[2][1]);
+            return rank2 - rank1;
+          })
+          .reverse()
+          .map((post) => (
+            <PostPreview
+              type={post.type}
+              media={post.media}
+              key={post.slug}
+              title={post.title}
+              coverImage={post.coverImage}
+              videoSrc={post.videoSrc}
+              date={post.date}
+              author={post.author}
+              slug={post.slug}
+              excerpt={post.excerpt}
+            />
+          ))}
       </div>
     </section>
   );
