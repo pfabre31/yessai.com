@@ -9,7 +9,7 @@ const PastShows = ({ posts }: Props) => {
   return (
     <section className="mb-10 mt-10">
       <h2
-        style={{ color: "#cb87e7" /*"#f3e0fb;"*/ }}
+        style={{ color: "#671a6b" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
         Past Shows
