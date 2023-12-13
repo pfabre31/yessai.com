@@ -3,7 +3,7 @@ import { CMS_NAME } from "../lib/constants";
 const Intro = () => {
   return (
     <section className="h-screen gap-8 flex-col flex items-center justify-center md:mb-12">
-      <div className="flex gap-8 main-title-all">
+      <div className="flex main-title-all">
         {" "}
         <div className="flex gap-0">
           {" "}
