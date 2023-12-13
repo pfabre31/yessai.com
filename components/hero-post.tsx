@@ -1,13 +1,9 @@
-import Avatar from "./avatar";
-import DateFormatter from "./date-formatter";
 import Video from "./youtube-video";
-import Link from "next/link";
 import type Author from "../interfaces/author";
 
 type Props = {
   title: string;
   coverImages: string;
-
   date: string;
   excerpt: string;
   author: Author;
