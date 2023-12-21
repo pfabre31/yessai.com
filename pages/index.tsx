@@ -8,6 +8,7 @@ import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
 import StudioOuttakes from "../components/studio-outtakes";
+import UpcomingShows from "../components/upcoming-shows";
 
 type Props = {
   allPosts: Post[];
@@ -33,6 +34,11 @@ export default function Index({ allPosts }: Props) {
               author={heroPost.author}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
+            />
+          )}
+          {morePosts.length > 0 && (
+            <UpcomingShows
+              posts={morePosts.filter((p) => p.type === "upcoming-show")}
             />
           )}
           {morePosts.length > 0 && (
