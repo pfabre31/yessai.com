@@ -65,7 +65,7 @@ const Intro = () => {
       </div>
       <div></div>{" "}
       <h4
-        style={{ color: "rgb(67 25 4)" }}
+        style={{ color: "rgb(79 30 5)" }}
         className="music-description text-center md:text-left text-lg"
       >
         Intimate & Groovy Original Music
