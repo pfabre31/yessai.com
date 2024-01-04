@@ -33,6 +33,11 @@ const HeroPost = ({
           </div>
         </div>
       </div>
+      <div className="artist-description">
+        "London-based singer-songwriter and pianist blending Neo Soul, Jazz,
+        Pop, and Disco into a unique, smooth, yet groovy and electrifying
+        sound."
+      </div>
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
