@@ -41,7 +41,7 @@ const HeroPost = ({
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
-          src={"https://www.youtube.com/embed/9Mov_Ul8Gf4?hd=1?hd=1"}
+          src={"https://youtube.com/embed/HJk0oNBLlXw"}
           slug={slug}
           type={"main-video"}
         />

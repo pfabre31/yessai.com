@@ -1,9 +1,9 @@
 ---
 type: "studio-outtake"
 media: "video"
-title: "Is It For Real?"
-excerpt: "Studio Outtake #4 at ICMP London"
-videoSrc: "https://www.youtube.com/embed/SisXgjqaDGk?hd=1"
+title: "Highlight"
+excerpt: "Studio Outtake #1 - Highlight"
+videoSrc: "https://www.youtube.com/embed/9Mov_Ul8Gf4?hd=1?hd=1"
 date: "2023-10-16T05:35:07.322Z"
 author:
   name: JJ Kasper
