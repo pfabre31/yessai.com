@@ -1,5 +1,5 @@
 ---
-type: "past-show"
+type: null
 media: "video"
 title: "The Bedford (Clapham)"
 excerpt: "Intimate show at the unique Bedford"

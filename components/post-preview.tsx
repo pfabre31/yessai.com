@@ -46,7 +46,11 @@ const PostPreview = ({
       {type === "past-show" ||
         (type === "upcoming-show" && (
           <div className="text-lg mb-4 date">
-            <DateFormatter dateString={date} />
+            {date !== "We'll let you check your schedule" ? (
+              <DateFormatter dateString={date} />
+            ) : (
+              date
+            )}
           </div>
         ))}
 

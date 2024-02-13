@@ -24,48 +24,27 @@ const HeroPost = ({
       <div className="intro-photo">
         <CoverImage
           title="Omeara, Nov. 2023"
-          src="/assets/photos/omeara.jpg"
+          src="/assets/photos/mol_bw.jpg"
         ></CoverImage>
         <div className="intro-photo-info flex justify-between">
-          <div className="intro-photo-title m-3">Omeara, Nov. 2023</div>
+          <div className="intro-photo-title m-3">Dublin Castle, Feb. 2024</div>
           <div className="intro-photo-credits m-3 text-end">
-            © Kadeen-Mae Brown
+            © Anastasiia Fursevych
           </div>
         </div>
       </div>
       <div className="artist-description">
-        "London-based singer-songwriter and pianist blending Neo Soul, Jazz,
-        Pop, and Disco into a unique, smooth, yet groovy and electrifying
-        sound."
+        "Just sit back and let these guys take over your heart."<br></br>
+        The Love Post
       </div>
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
-          src={"https://youtube.com/embed/HJk0oNBLlXw"}
+          src={"https://www.youtube.com/embed/EAkrFETtF3k"}
           slug={slug}
           type={"main-video"}
         />
       </div>
-      {/* <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
-            <Link
-              as={`/posts/${slug}`}
-              href="/posts/[slug]"
-              className="hover:underline"
-            >
-              {title}
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
-          </div>
-        </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -22,7 +22,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Paul Fabre Music</title>
+          <title>Masters of Love</title>
         </Head>
         <Container>
           <Intro />
@@ -44,11 +44,6 @@ export default function Index({ allPosts }: Props) {
           {morePosts.length > 0 && (
             <PastShows
               posts={morePosts.filter((p) => p.type === "past-show")}
-            />
-          )}
-          {morePosts.length > 0 && (
-            <StudioOuttakes
-              posts={morePosts.filter((p) => p.type === "studio-outtake")}
             />
           )}
         </Container>
