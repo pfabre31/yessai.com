@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <section className="h-screen gap-8 flex-col flex items-center justify-center md:mb-12">
       <div className="flex main-title-all">
-        <div className="flex">
+        <div className="flex main-title-word">
           {" "}
           <div
             style={{ color: "#8515d5" /*"#670ed5"*/ }}
@@ -51,7 +51,7 @@ const Intro = () => {
             s
           </div>
         </div>
-        <div className="flex">
+        <div className="flex main-title-word">
           {" "}
           <div
             style={{ color: "#891414" }}
@@ -66,7 +66,7 @@ const Intro = () => {
             f
           </div>
         </div>
-        <div className="flex">
+        <div className="flex main-title-word">
           {" "}
           <div
             style={{ color: "#8515d5" /*"#670ed5"*/ }}
