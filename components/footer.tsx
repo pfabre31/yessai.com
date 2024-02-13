@@ -8,7 +8,7 @@ const Footer = () => {
       </div>
       <div className="mail-block">
         {" "}
-        <div className="mail-text">PAULFABRE31@GMAIL.COM</div>
+        <div className="mail-text">MASTERSOFLOVE.BOOKING@OUTLOOK.COM</div>
       </div>
     </div>
   );
