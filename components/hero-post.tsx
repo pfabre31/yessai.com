@@ -28,9 +28,7 @@ const HeroPost = ({
         ></CoverImage>
         <div className="intro-photo-info flex justify-between">
           <div className="intro-photo-title m-3">Dublin Castle, Feb. 2024</div>
-          <div className="intro-photo-credits m-3 text-end">
-            © Anastasiia Fursevych
-          </div>
+          <div className="intro-photo-credits m-3 text-end">@Aśya</div>
         </div>
       </div>
       <div className="artist-description">
