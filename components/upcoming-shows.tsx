@@ -19,7 +19,6 @@ const UpcomingShows = ({ posts }: Props) => {
           .sort((p1, p2) => {
             return new Date(p2.date).getDate() - new Date(p1.date).getDate();
           })
-          .reverse()
           .map((post) => (
             <PostPreview
               type={post.type}
