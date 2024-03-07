@@ -17,7 +17,7 @@ const UpcomingShows = ({ posts }: Props) => {
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-5 md:gap-y-5">
         {posts
           .sort((p1, p2) => {
-            return p1.title.localeCompare(p2.title);
+            return p1.excerpt.localeCompare(p2.excerpt);
           })
           .map((post) => (
             <PostPreview
