@@ -8,12 +8,9 @@ type PostType = {
   date: string;
   coverImages: string[];
   videoSrc: string;
-  author: Author;
   excerpt: string;
-  ogImage: {
-    url: string;
-  };
   content: string;
+  ticketUrl: string | null;
 };
 
 export default PostType;

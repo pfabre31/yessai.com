@@ -28,9 +28,9 @@ const PastShows = ({ posts }: Props) => {
               coverImages={post.coverImages}
               videoSrc={post.videoSrc}
               date={post.date}
-              author={post.author}
               slug={post.slug}
               excerpt={post.excerpt}
+              ticketUrl={null}
             />
           ))}
       </div>
