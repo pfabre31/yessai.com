@@ -12,8 +12,8 @@ type Props = {
   videoSrc: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
+  ticketUrl: string;
 };
 
 const PostPreview = ({
@@ -24,8 +24,8 @@ const PostPreview = ({
   videoSrc,
   date,
   excerpt,
-  author,
   slug,
+  ticketUrl,
 }: Props) => {
   return (
     <div className="mb-3">
@@ -46,16 +46,23 @@ const PostPreview = ({
       {type === "past-show" ||
         (type === "upcoming-show" && (
           <div className="text-lg mb-4 date">
-            {date !== "We'll let you check your schedule" ? (
-              <DateFormatter dateString={date} />
-            ) : (
-              date
-            )}
+            {<DateFormatter dateString={date} />}
           </div>
         ))}
-
-      {/* <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} /> */}
+      {ticketUrl && (
+        <a target="_blank" href={ticketUrl}>
+          <div className="ticket-div flex gap-4">
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+            />
+            <span className="material-symbols-outlined">
+              confirmation_number
+            </span>
+            <div className="ticket-label">Get tickets</div>
+          </div>
+        </a>
+      )}
     </div>
   );
 };

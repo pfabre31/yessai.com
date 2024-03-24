@@ -6,6 +6,7 @@ type Props = {
 };
 
 const UpcomingShows = ({ posts }: Props) => {
+  console.log(posts);
   return (
     <section className="mb-10 mt-10">
       <h2
@@ -28,9 +29,9 @@ const UpcomingShows = ({ posts }: Props) => {
               coverImages={post.coverImages}
               videoSrc={post.videoSrc}
               date={post.date}
-              author={post.author}
               slug={post.slug}
               excerpt={post.excerpt}
+              ticketUrl={post.ticketUrl}
             />
           ))}
       </div>

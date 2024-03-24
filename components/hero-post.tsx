@@ -7,18 +7,11 @@ type Props = {
   coverImages: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
+  ticketUrl: string | null;
 };
 
-const HeroPost = ({
-  title,
-  coverImages,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
+const HeroPost = ({ title, coverImages, date, excerpt, slug }: Props) => {
   return (
     <section>
       <div className="intro-photo">
@@ -31,10 +24,10 @@ const HeroPost = ({
           <div className="intro-photo-credits m-3 text-end">@Aśya</div>
         </div>
       </div>
-      <div className="artist-description">
+      {/* <div className="artist-description">
         "Just sit back and let these guys take over your heart."<br></br>
         The Love Post
-      </div>
+      </div> */}
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}

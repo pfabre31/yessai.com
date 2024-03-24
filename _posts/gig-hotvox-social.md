@@ -6,9 +6,5 @@ excerpt: "1 - Duo gig at the Sindercombe Social"
 coverImages: null
 videoSrc: ""
 date: "2024-04-05T05:35:07.322Z"
-author:
-  name: ""
-  picture: ""
-ogImage:
-  url: ""
+ticketUrl: "https://hotvox.co.uk/event/beer-and-busking-feat-8/"
 ---
