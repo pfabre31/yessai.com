@@ -1,7 +1,7 @@
 ---
 type: "past-show"
 media: "carousel"
-title: "Half Moon"
+title: "Half Moon, London"
 excerpt: "5 - Solo set for New Moon Event"
 coverImages:
   [

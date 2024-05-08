@@ -1,7 +1,7 @@
 ---
 type: "past-show"
 media: "carousel"
-title: "Temple of Art and Music (TAM)"
+title: "Temple of Art and Music (TAM), London"
 excerpt: "5 - Sold out show at the London iconic TAM in Mercato Metropolitano (Elephant & Castle)"
 coverImages:
   [

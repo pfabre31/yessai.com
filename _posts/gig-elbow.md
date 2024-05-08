@@ -1,7 +1,7 @@
 ---
 type: "past-show"
 media: "carousel"
-title: "Headline Show - Fiddlers Elbow"
+title: "Headline Show - Fiddlers Elbow, London"
 excerpt: "2 - Full band show at the Fiddlers Elbow, Camden"
 coverImages:
   [

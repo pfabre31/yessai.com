@@ -1,7 +1,7 @@
 ---
 type: "past-show"
 media: "video"
-title: "The Moustache Bar"
+title: "The Moustache Bar, London"
 excerpt: "3 - Sold out show at the Moustache Bar, Dalston"
 coverImages: [""]
 videoSrc: "https://www.youtube.com/embed/gZcAPQsfnlI"
