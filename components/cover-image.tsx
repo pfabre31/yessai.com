@@ -6,7 +6,7 @@ type Props = {
   title: string;
   src: string;
   slug?: string;
-  type: string;
+  type?: string;
   pressUrl?: string;
 };
 
