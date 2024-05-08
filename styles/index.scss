@@ -125,6 +125,9 @@ html {
   font-family: "shine-coasty", "Oswald", "Verdana", sans-serif;
   font-size: 2rem;
   font-weight: 100;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 .tour-title {
@@ -132,9 +135,13 @@ html {
   color: #6e10b1 !important;
 }
 
-.tour-gig-preview {
+.gig-preview {
   margin: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-title {

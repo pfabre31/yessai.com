@@ -28,7 +28,13 @@ const PostPreview = ({
   ticketUrl,
 }: Props) => {
   return (
-    <div className={type === "tour-of-love" ? "mb-3 tour-gig-preview" : "mb-3"}>
+    <div
+      className={
+        type === "tour-of-love" || type === "upcoming-show"
+          ? "mb-3 gig-preview"
+          : "mb-3"
+      }
+    >
       <div className="mb-5">
         {media === "photo" ? (
           <CoverImage slug={slug} title={title} src={coverImages[0]} />
