@@ -1,7 +1,12 @@
 import type Author from "./author";
 
 type PostType = {
-  type: "past-show" | "studio-outtake" | "upcoming-show" | "tour-of-love";
+  type:
+    | "past-show"
+    | "studio-outtake"
+    | "upcoming-show"
+    | "tour-of-love"
+    | "more-videos";
   media: "video" | "photo";
   slug: string;
   title: string;

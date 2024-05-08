@@ -10,6 +10,7 @@ import Post from "../interfaces/post";
 import StudioOuttakes from "../components/studio-outtakes";
 import UpcomingShows from "../components/upcoming-shows";
 import TourOfLove from "../components/touroflove";
+import MoreVideos from "../components/more-videos";
 
 type Props = {
   allPosts: Post[];
@@ -51,6 +52,11 @@ export default function Index({ allPosts }: Props) {
           {morePosts.length > 0 && (
             <PastShows
               posts={morePosts.filter((p) => p.type === "past-show")}
+            />
+          )}
+          {morePosts.length > 0 && (
+            <MoreVideos
+              posts={morePosts.filter((p) => p.type === "more-videos")}
             />
           )}
         </Container>

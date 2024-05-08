@@ -5,7 +5,12 @@ import Video from "./youtube-video";
 import CustomCarousel from "./custom-carousel";
 
 type Props = {
-  type: "past-show" | "studio-outtake" | "upcoming-show" | "tour-of-love";
+  type:
+    | "past-show"
+    | "studio-outtake"
+    | "upcoming-show"
+    | "tour-of-love"
+    | "more-videos";
   media: "video" | "photo";
   title: string;
   coverImages: string[];
