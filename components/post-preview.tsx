@@ -5,7 +5,7 @@ import Video from "./youtube-video";
 import CustomCarousel from "./custom-carousel";
 
 type Props = {
-  type: "past-show" | "studio-outtake" | "upcoming-show";
+  type: "past-show" | "studio-outtake" | "upcoming-show" | "tour-of-love";
   media: "video" | "photo";
   title: string;
   coverImages: string[];
@@ -28,7 +28,7 @@ const PostPreview = ({
   ticketUrl,
 }: Props) => {
   return (
-    <div className="mb-3">
+    <div className={type === "tour-of-love" ? "mb-3 tour-gig-preview" : "mb-3"}>
       <div className="mb-5">
         {media === "photo" ? (
           <CoverImage slug={slug} title={title} src={coverImages[0]} />
@@ -44,7 +44,7 @@ const PostPreview = ({
         <h3 className="text-3xl mb-3 leading-snug post-title">{title}</h3>
       )}
       {type === "past-show" ||
-        (type === "upcoming-show" && (
+        ((type === "upcoming-show" || type === "tour-of-love") && (
           <div className="text-lg mb-4 date">
             {<DateFormatter dateString={date} />}
           </div>

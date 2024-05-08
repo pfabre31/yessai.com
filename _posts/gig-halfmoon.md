@@ -1,10 +1,16 @@
 ---
-type: "upcoming-show"
-media: null
+type: "past-show"
+media: "carousel"
 title: "Half Moon"
-excerpt: "2 - Solo set for New Moon Event"
-coverImages: null
+excerpt: "5 - Solo set for New Moon Event"
+coverImages:
+  [
+    "/assets/photos/halfmoon-1.jpg",
+    "/assets/photos/halfmoon-2.jpg",
+    "/assets/photos/halfmoon-3.jpg",
+    "/assets/photos/halfmoon-4.jpg",
+  ]
 videoSrc: ""
 date: "2024-04-08T05:35:07.322Z"
-ticketUrl: "https://tickets.halfmoon.co.uk/events/2024-04-08-new-moon-a-night-of-new-music-half-moon-putney"
+ticketUrl: null
 ---

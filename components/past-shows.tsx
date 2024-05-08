@@ -16,9 +16,9 @@ const PastShows = ({ posts }: Props) => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32">
         {posts
-          // .sort((p1, p2) => {
-          //   return new Date(p2.date).getDate() - new Date(p1.date).getDate();
-          // })
+          .sort((p1, p2) => {
+            return p1.excerpt.localeCompare(p2.excerpt);
+          })
           .map((post) => (
             <PostPreview
               type={post.type}
