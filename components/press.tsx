@@ -5,23 +5,20 @@ type Props = {
   posts: Post[];
 };
 
-const StudioOuttakes = ({ posts }: Props) => {
+const Press = ({ posts }: Props) => {
   return (
-    <section className="mb-10">
+    <section className="mb-10 mt-10">
       <h2
-        style={{ color: "rgb(141 54 11)" /*"#cb87e7""#f3e0fb;"*/ }}
+        style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
-        Studio Outtakes
+        Press
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32">
+      <div className="flex flex-col center">
         {posts
           .sort((p1, p2) => {
-            const rank1 = parseInt(p1.excerpt.split(" ")[2][1]);
-            const rank2 = parseInt(p2.excerpt.split(" ")[2][1]);
-            return rank2 - rank1;
+            return p1.excerpt.localeCompare(p2.excerpt);
           })
-          .reverse()
           .map((post) => (
             <PostPreview
               type={post.type}
@@ -34,7 +31,7 @@ const StudioOuttakes = ({ posts }: Props) => {
               slug={post.slug}
               excerpt={post.excerpt}
               ticketUrl={null}
-              pressUrl={null}
+              pressUrl={post.pressUrl}
             />
           ))}
       </div>
@@ -42,4 +39,4 @@ const StudioOuttakes = ({ posts }: Props) => {
   );
 };
 
-export default StudioOuttakes;
+export default Press;

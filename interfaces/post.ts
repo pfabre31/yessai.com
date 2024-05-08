@@ -6,7 +6,8 @@ type PostType = {
     | "studio-outtake"
     | "upcoming-show"
     | "tour-of-love"
-    | "more-videos";
+    | "more-videos"
+    | "press-element";
   media: "video" | "photo";
   slug: string;
   title: string;
@@ -16,6 +17,7 @@ type PostType = {
   excerpt: string;
   content: string;
   ticketUrl: string | null;
+  pressUrl: string | null;
 };
 
 export default PostType;

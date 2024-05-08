@@ -31,6 +31,7 @@ const UpcomingShows = ({ posts }: Props) => {
               slug={post.slug}
               excerpt={post.excerpt}
               ticketUrl={post.ticketUrl}
+              pressUrl={null}
             />
           ))}
       </div>

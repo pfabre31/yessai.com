@@ -11,6 +11,7 @@ import StudioOuttakes from "../components/studio-outtakes";
 import UpcomingShows from "../components/upcoming-shows";
 import TourOfLove from "../components/touroflove";
 import MoreVideos from "../components/more-videos";
+import Press from "../components/press";
 
 type Props = {
   allPosts: Post[];
@@ -55,6 +56,11 @@ export default function Index({ allPosts }: Props) {
             />
           )}
           {morePosts.length > 0 && (
+            <Press
+              posts={morePosts.filter((p) => p.type === "press-element")}
+            />
+          )}
+          {morePosts.length > 0 && (
             <MoreVideos
               posts={morePosts.filter((p) => p.type === "more-videos")}
             />
@@ -76,6 +82,7 @@ export const getStaticProps = async () => {
     "coverImages",
     "excerpt",
     "ticketUrl",
+    "pressUrl",
   ]);
 
   return {

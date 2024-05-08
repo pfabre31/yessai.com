@@ -31,6 +31,7 @@ const MoreVideos = ({ posts }: Props) => {
               slug={post.slug}
               excerpt={post.excerpt}
               ticketUrl={null}
+              pressUrl={null}
             />
           ))}
       </div>
