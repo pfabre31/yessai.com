@@ -31,6 +31,7 @@ const TourOfLove = ({ posts }: Props) => {
               slug={post.slug}
               excerpt={post.excerpt}
               ticketUrl={post.ticketUrl}
+              pressUrl={post.pressUrl}
             />
           ))}
       </div>
