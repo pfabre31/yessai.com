@@ -31,7 +31,7 @@ const HeroPost = ({ title, coverImages, date, excerpt, slug }: Props) => {
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
-          src={"https://www.youtube.com/embed/-RbJG13F0-g"}
+          src={"https://www.youtube.com/embed/zRuFIMjuxnI"}
           slug={slug}
           type={"main-video"}
         />
