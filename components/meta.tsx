@@ -30,7 +30,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`London based Neo Soul singer/songwriter/pianist`}
+        content={`Groovy & Intimate Original Music - London, UK`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>

@@ -1,1 +1,1 @@
-# London based Neo Soul singer/songwriter/pianist
+# Groovy & Intimate Original Music - London
