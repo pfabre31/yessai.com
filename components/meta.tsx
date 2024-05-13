@@ -30,7 +30,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Groovy & Intimate Original Music - London, UK`}
+        content={`Intimate and Groovy Original Music - London, UK`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
