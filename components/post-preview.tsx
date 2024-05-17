@@ -21,6 +21,7 @@ type Props = {
   slug: string;
   ticketUrl: string;
   pressUrl: string;
+  status?: string;
 };
 
 const PostPreview = ({
@@ -34,6 +35,7 @@ const PostPreview = ({
   slug,
   ticketUrl,
   pressUrl,
+  status,
 }: Props) => {
   return (
     <div
@@ -66,6 +68,16 @@ const PostPreview = ({
       {type === "past-show" ||
         ((type === "upcoming-show" || type === "tour-of-love") && (
           <div className="text-lg mb-4 date">
+            {status === "In Discussion" && (
+              <div
+                style={{
+                  display: "inline",
+                  verticalAlign: "sub",
+                }}
+              >
+                ~{" "}
+              </div>
+            )}
             {<DateFormatter dateString={date} />}
           </div>
         ))}
@@ -94,6 +106,35 @@ const PostPreview = ({
             <div className="ticket-label">Go to the article</div>
           </div>
         </a>
+      )}
+      {status && (
+        <div
+          className={
+            "flex gap-4 " + (status == "Booked" ? "green" : "ticket-div")
+          }
+        >
+          {status === "Booked" && (
+            <>
+              <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+              />
+              <span className="material-symbols-outlined">check_circle</span>{" "}
+            </>
+          )}
+          {status === "In Discussion" && (
+            <>
+              <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+              />
+              <span className="material-symbols-outlined bubble-icon">
+                chat_bubble
+              </span>
+            </>
+          )}
+          <div className="ticket-label">{status}</div>
+        </div>
       )}
     </div>
   );

@@ -63,6 +63,7 @@ export async function getStaticProps({ params }: Params) {
     "media",
     "ticketUrl",
     "pressUrl",
+    "status",
   ]);
   const content = await markdownToHtml(post.content || "");
 

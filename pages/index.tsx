@@ -85,6 +85,7 @@ export const getStaticProps = async () => {
     "excerpt",
     "ticketUrl",
     "pressUrl",
+    "status",
   ]);
 
   return {

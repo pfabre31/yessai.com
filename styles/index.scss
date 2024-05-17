@@ -196,4 +196,22 @@ html {
 
 .ticket-div {
   color: rgb(183, 134, 73);
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.colored-sentence {
+  display: inline;
+  color: rgb(141 94 51);
+}
+
+.green {
+  color: rgb(77, 127, 23);
+  display: flex;
+  gap: 1rem;
+}
+
+.bubble-icon {
+  font-size: 0.8rem;
 }

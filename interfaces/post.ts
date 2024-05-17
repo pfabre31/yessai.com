@@ -18,6 +18,7 @@ type PostType = {
   content: string;
   ticketUrl: string | null;
   pressUrl: string | null;
+  status?: string;
 };
 
 export default PostType;
