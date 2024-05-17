@@ -28,7 +28,7 @@ const TourOfLove = ({ posts }: Props) => {
         <div>
           No booker, tour manager, or record label.{" "}
           <div className="colored-sentence">
-            Just us, our crowd, and you-the venue.
+            Just us, our crowd, and you-the venues.
           </div>
         </div>
         <br></br> <br></br>Get in touch to be part of the 2024 edition !

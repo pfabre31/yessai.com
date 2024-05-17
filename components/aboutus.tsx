@@ -24,7 +24,8 @@ const AboutUs = ({ posts }: Props) => {
         Our music, composed primarly of original songs, is a blend of Neo Soul,
         Jazz, Funk, Pop and Hip Hop. It's intense, smooth, and electrifying all
         at once, just like our debut EP coming out in September 2024. <br></br>
-        <br></br> We believe in community, independence, and artistic freedom.
+        <br></br> We believe in community, independence, and total artistic
+        freedom.
       </p>
     </section>
   );
