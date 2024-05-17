@@ -21,14 +21,14 @@ const TourOfLove = ({ posts }: Props) => {
         The Tour of Love - 2024
       </h2>
       <div className="artist-description">
-        As musicians, our aim is to touch people, as directly and sincerely as
-        we can.<br></br>
-        Each year, we're pulling off our Tour of Love accross Europe to tighten
-        our community. <br></br>
+        As musicians, our aim is to touch people as directly and sincerely as we
+        can.<br></br>
+        Each year, we embark on our Tour of Love across Europe to tighten our
+        community. <br></br>
         <div>
           No booker, tour manager, or record label.{" "}
           <div className="colored-sentence">
-            Just us, our crowd, and you -the venue-.
+            Just us, our crowd, and you-the venue.
           </div>
         </div>
         <br></br> <br></br>Get in touch to be part of the 2024 edition !
