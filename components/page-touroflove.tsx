@@ -12,27 +12,8 @@ const TourOfLove = ({ posts }: Props) => {
         style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title tour-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
-        Tour
+        Tour of Love
       </h2>
-      <h2
-        style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
-        className="subsection-title tour-title mb-10 text-4xl md:text-7xl font-bold tracking-tighter leading-tight"
-      >
-        The Tour of Love - 2024 edition
-      </h2>
-      <p className="artist-description">
-        As musicians, our aim is to touch people, as directly and sincerely as
-        we can.<br></br>
-        Each year, we're pulling off our Tour of Love accross Europe to tighten
-        our community. <br></br>
-        <p>
-          No booker, tour manager, or record label.{" "}
-          <div style={{ display: "inline", color: "rgb(141 94 51)" }}>
-            Just us, our crowd, and you -the venue-.
-          </div>
-        </p>
-        <br></br> <br></br>Get in touch to be part of the 2024 edition !
-      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-5 md:gap-y-5">
         {posts
           .sort((p1, p2) => {

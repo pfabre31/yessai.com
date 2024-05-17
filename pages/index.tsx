@@ -12,6 +12,7 @@ import UpcomingShows from "../components/upcoming-shows";
 import TourOfLove from "../components/touroflove";
 import MoreVideos from "../components/more-videos";
 import Press from "../components/press";
+import AboutUs from "../components/aboutus";
 
 type Props = {
   allPosts: Post[];
@@ -39,6 +40,7 @@ export default function Index({ allPosts }: Props) {
               ticketUrl={heroPost.ticketUrl}
             />
           )}
+          <AboutUs posts={morePosts}></AboutUs>
           {morePosts.length > 0 && (
             <UpcomingShows
               posts={morePosts.filter((p) => p.type === "upcoming-show")}
