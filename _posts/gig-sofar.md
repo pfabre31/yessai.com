@@ -1,7 +1,7 @@
 ---
 type: "upcoming-show"
 media: null
-title: "Sofar Sounds - London"
+title: "Sofar Sounds, London"
 excerpt: "1 - Full band show for Sofar Sounds in Shoreditch, London, UK"
 coverImages: null
 videoSrc: ""

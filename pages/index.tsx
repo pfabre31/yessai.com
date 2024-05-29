@@ -49,9 +49,10 @@ export default function Index({ allPosts }: Props) {
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
               ticketUrl={heroPost.ticketUrl}
+              language={language as any}
             />
           )}
-          <AboutUs posts={morePosts} language={language as any}></AboutUs>
+          <AboutUs posts={morePosts} language={language}></AboutUs>
           {morePosts.length > 0 && (
             <UpcomingShows
               language={language as any}

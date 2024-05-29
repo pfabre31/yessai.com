@@ -35,6 +35,7 @@ const MoreVideos = ({ posts, language }: Props) => {
               excerpt={post.excerpt}
               ticketUrl={null}
               pressUrl={null}
+              language={language}
             />
           ))}
       </div>

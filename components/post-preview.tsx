@@ -2,7 +2,7 @@ import DateFormatter, { DateFormatterString } from "./date-formatter";
 import CoverImage from "./cover-image";
 import Video from "./youtube-video";
 import CustomCarousel from "./custom-carousel";
-import { dateTranslator } from "../utils";
+import { dateTranslator, placeTranslator } from "../utils";
 import { useContext } from "react";
 import { LanguageContext } from "../context/language";
 import { Language } from "../pages";
@@ -69,7 +69,9 @@ const PostPreview = ({
         )}
       </div>
       {type !== "studio-outtake" && (
-        <h3 className="text-3xl mb-3 leading-snug post-title">{title}</h3>
+        <h3 className="text-3xl mb-3 leading-snug post-title">
+          {type === "press-element" ? title : placeTranslator(title, language)}
+        </h3>
       )}
       {type === "past-show" ||
         ((type === "upcoming-show" || type === "tour-of-love") && (

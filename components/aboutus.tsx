@@ -20,6 +20,7 @@ const AboutUs = ({ posts, language }: Props) => {
       <p className="artist-description">
         {versions.aboutus[language].content[0]}
         <br></br>
+        <br></br>
         {versions.aboutus[language].content[1]}
         <br></br>
         <br></br>

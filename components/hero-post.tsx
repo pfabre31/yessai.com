@@ -1,6 +1,7 @@
 import Video from "./youtube-video";
 import type Author from "../interfaces/author";
 import CoverImage from "./cover-image";
+import { Language } from "../pages";
 
 type Props = {
   title: string;
@@ -9,9 +10,17 @@ type Props = {
   excerpt: string;
   slug: string;
   ticketUrl: string | null;
+  language: Language;
 };
 
-const HeroPost = ({ title, coverImages, date, excerpt, slug }: Props) => {
+const HeroPost = ({
+  title,
+  coverImages,
+  date,
+  excerpt,
+  slug,
+  language,
+}: Props) => {
   return (
     <section>
       <div className="intro-photo">
@@ -20,7 +29,9 @@ const HeroPost = ({ title, coverImages, date, excerpt, slug }: Props) => {
           src="/assets/photos/mol_bw.jpg"
         ></CoverImage>
         <div className="intro-photo-info flex justify-between">
-          <div className="intro-photo-title m-3">Dublin Castle, Feb. 2024</div>
+          <div className="intro-photo-title m-3">{`Dublin Castle, ${
+            ["EN", "ES"].includes(language) ? "Feb" : "Fév"
+          }. 2024`}</div>
           <div className="intro-photo-credits m-3 text-end">@Aśya</div>
         </div>
       </div>

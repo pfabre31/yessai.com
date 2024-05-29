@@ -1,7 +1,7 @@
 export const versions = {
   subtitle: {
     EN: "Intimate and Groovy Original Music",
-    FR: "Intimate and Groovy Original Music",
+    FR: "Musique intimiste et électrisante, rien que pour vous",
   },
   aboutus: {
     EN: {
@@ -14,10 +14,10 @@ export const versions = {
       ],
     },
     FR: {
-      title: "À Propos",
+      title: "À Propos de Nous",
       content: [
         "Nous sommes un groupe de musique indépendant  basé à Londres dont les membres viennent des quatre coins de l'Europe.",
-        "Quatre musiciens professionnels dont les carrières respectives nous ont menées jusqu'à vers des lieux mythiques tels que la Nouvelle Orléans, le Carnegie Hall à New York, le Montreux Jazz Festival ou encore les studios Abbey Road",
+        "Quatre musiciens professionnels dont les carrières respectives nous ont menés jusqu'à vers des lieux mythiques tels que la Nouvelle Orléans, le Carnegie Hall à New York, le Montreux Jazz Festival ou encore les studios Abbey Road.",
         "Notre répertoire, constitué essentiellement de compositions, est un mélange de Neo Soul, Jazz, Funk, Pop et Hip Hop. C'est une musique à la fois intense, douce, et électrisante, à l'image de notre premier EP qui verra le jour en Septembre 2024.",
         "Notre communauté, notre indépendance et notre liberté artistique constituent le coeur de ce projet.",
       ],
@@ -30,7 +30,7 @@ export const versions = {
       content: [
         "As musicians, our aim is to touch people as directly and sincerely as we can.",
         "Each year, we embark on our Tour of Love across Europe to tighten our community.",
-        "From England to Spain, France, Italy and Austria; we sail accross Europe to spread love and unite even more people around our music.",
+        "From England to Spain, France, Italy and Austria; we sail accross Europe to spread our love for music and unite even more people around ours.",
         "Get in touch to be part of the 2024 edition !",
       ],
     },
@@ -38,9 +38,9 @@ export const versions = {
       maintitle: "Tournée",
       subtitle: "Tournée de l'Amour - 2024",
       content: [
-        "Notre but en tant que musiciens est de toucher notre public aussi directement et sincèrement que possible",
-        "Chaque année, nous embarquons pour notre Tournée de l'Amour dans le but de ressérer les liens avec notre communauté.",
-        "De l'Angleterre à l'Andalousie en passant par la France, l'Italie et l'Autriche; nous parcourons l'Europe pour partager notre amour et agrandir chaque fois notre communauté.",
+        "Notre but en tant que musiciens est de toucher notre public aussi directement et sincèrement que possible.",
+        "Dans cette optique, chaque année, nous embarquons pour notre Tournée de l'Amour dans le but de ressérer les liens avec notre communauté.",
+        "De l'Angleterre à l'Andalousie en passant par la France, l'Italie et l'Autriche; nous parcourons l'Europe pour partager notre amour de la musique et agrandir chaque fois notre communauté.",
         "Contactez-nous pour faire partie de l'édition 2024 ! ",
       ],
     },
@@ -59,7 +59,14 @@ export const versions = {
   more: { EN: "More", FR: "Plus" },
   upcominghomeshows: {
     EN: "Upcoming Home Shows",
-    FR: "Prochaines Dates Locales",
+    FR: "Prochaines Dates Londoniennes",
+  },
+  places: {
+    london: { EN: "London", FR: "Londres" },
+    italy: { EN: "Italy", FR: "Italie" },
+    spain: { EN: "Spain", FR: "Espagne" },
+    sevilla: { EN: "Sevilla", FR: "Séville" },
+    uk: { EN: "UK", FR: "Royaume-Uni" },
   },
   months: {
     January: {
