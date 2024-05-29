@@ -1,31 +1,32 @@
 import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
+import { Language } from "../pages";
+import { versions } from "../constants/versions";
 
 type Props = {
   posts: Post[];
+  language: Language;
 };
 
-const AboutUs = ({ posts }: Props) => {
+const AboutUs = ({ posts, language }: Props) => {
   return (
     <section className="mb-10 mt-10">
       <h2
         style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
-        About us
+        {versions.aboutus[language].title}
       </h2>
       <p className="artist-description">
-        We're a four-piece independent band based in London, United Kingdom.{" "}
-        <br></br>Four high-end musicians whose careers have taken us to New
-        Orleans, New York's Carnegie Hall, Montreux Jazz Festival or Abbey Road
-        Studios.
+        {versions.aboutus[language].content[0]}
+        <br></br>
+        {versions.aboutus[language].content[1]}
         <br></br>
         <br></br>
-        Our music, composed primarly of original songs, is a blend of Neo Soul,
-        Jazz, Funk, Pop and Hip Hop. It's intense, smooth, and electrifying all
-        at once, just like our debut EP coming out in September 2024. <br></br>
-        <br></br> We believe in community, independence, and total artistic
-        freedom.
+        {versions.aboutus[language].content[2]}
+        <br></br>
+        <br></br>
+        {versions.aboutus[language].content[3]}
       </p>
     </section>
   );

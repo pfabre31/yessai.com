@@ -1,18 +1,22 @@
 import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
+import { Language } from "../pages";
+import { versions } from "../constants/versions";
+import { language } from "gray-matter";
 
 type Props = {
   posts: Post[];
+  language: Language;
 };
 
-const Press = ({ posts }: Props) => {
+const Press = ({ posts, language }: Props) => {
   return (
     <section className="mb-10 mt-10">
       <h2
         style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
-        Press
+        {versions.press[language].title}
       </h2>
       <div className="flex flex-col center">
         {posts
@@ -32,6 +36,7 @@ const Press = ({ posts }: Props) => {
               excerpt={post.excerpt}
               ticketUrl={null}
               pressUrl={post.pressUrl}
+              language={language}
             />
           ))}
       </div>

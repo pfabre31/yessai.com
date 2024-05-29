@@ -26,7 +26,7 @@ export type Language = "EN" | "FR";
 export default function Index({ allPosts }: Props) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(0);
-  const [language, setLanguage] = useState("EN");
+  const [language, setLanguage] = useState("EN" as Language);
   const value = {
     language,
     setLanguage: (l: Language) => setLanguage(l),
@@ -40,7 +40,7 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <Container>
           <LanguageSwitcher></LanguageSwitcher>
-          <Intro />
+          <Intro language={language as any} />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -51,30 +51,35 @@ export default function Index({ allPosts }: Props) {
               ticketUrl={heroPost.ticketUrl}
             />
           )}
-          <AboutUs posts={morePosts}></AboutUs>
+          <AboutUs posts={morePosts} language={language as any}></AboutUs>
           {morePosts.length > 0 && (
             <UpcomingShows
+              language={language as any}
               posts={morePosts.filter((p) => p.type === "upcoming-show")}
             />
           )}
           {morePosts.length > 0 && (
             <TourOfLove
+              language={language as any}
               posts={morePosts.filter((p) => p.type === "tour-of-love")}
             />
           )}
 
           {morePosts.length > 0 && (
             <PastShows
+              language={language}
               posts={morePosts.filter((p) => p.type === "past-show")}
             />
           )}
           {morePosts.length > 0 && (
             <Press
+              language={language as any}
               posts={morePosts.filter((p) => p.type === "press-element")}
             />
           )}
           {morePosts.length > 0 && (
             <MoreVideos
+              language={language as any}
               posts={morePosts.filter((p) => p.type === "more-videos")}
             />
           )}

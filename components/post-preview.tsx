@@ -5,6 +5,8 @@ import CustomCarousel from "./custom-carousel";
 import { dateTranslator } from "../utils";
 import { useContext } from "react";
 import { LanguageContext } from "../context/language";
+import { Language } from "../pages";
+import { versions } from "../constants/versions";
 
 type Props = {
   type:
@@ -24,6 +26,7 @@ type Props = {
   ticketUrl: string;
   pressUrl: string;
   status?: string;
+  language?: Language;
 };
 
 const PostPreview = ({
@@ -38,8 +41,8 @@ const PostPreview = ({
   ticketUrl,
   pressUrl,
   status,
+  language,
 }: Props) => {
-  const { language, setLanguage } = useContext(LanguageContext);
   return (
     <div
       className={
@@ -102,7 +105,9 @@ const PostPreview = ({
             <span className="material-symbols-outlined">
               confirmation_number
             </span>
-            <div className="ticket-label">Get tickets</div>
+            <div className="ticket-label">
+              {versions.ticketslabel[language]}
+            </div>
           </div>
         </a>
       )}
@@ -114,7 +119,10 @@ const PostPreview = ({
               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
             />
             <span className="material-symbols-outlined">news</span>
-            <div className="ticket-label">Go to the article</div>
+            <div className="ticket-label">
+              {" "}
+              {versions.press[language].label}
+            </div>
           </div>
         </a>
       )}
@@ -144,7 +152,11 @@ const PostPreview = ({
               </span>
             </>
           )}
-          <div className="ticket-label">{status}</div>
+          <div className="ticket-label">
+            {status === "Booked"
+              ? versions.status.booked[language]
+              : versions.status.indiscussion[language]}
+          </div>
         </div>
       )}
     </div>

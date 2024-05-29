@@ -1,18 +1,21 @@
 import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
+import { versions } from "../constants/versions";
+import { Language } from "../pages";
 
 type Props = {
   posts: Post[];
+  language: Language;
 };
 
-const UpcomingShows = ({ posts }: Props) => {
+const UpcomingShows = ({ posts, language }: Props) => {
   return (
     <section className="mb-10 mt-10">
       <h2
         style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
-        Upcoming Home Shows
+        {versions.upcominghomeshows[language]}
       </h2>
       <div className="flex flex-col center">
         {posts
@@ -32,6 +35,7 @@ const UpcomingShows = ({ posts }: Props) => {
               excerpt={post.excerpt}
               ticketUrl={post.ticketUrl}
               pressUrl={null}
+              language={language}
             />
           ))}
       </div>

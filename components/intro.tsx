@@ -1,4 +1,7 @@
-const Intro = () => {
+import { versions } from "../constants/versions";
+import { Language } from "../pages";
+
+const Intro = ({ language }) => {
   return (
     <section className="h-screen gap-8 flex-col flex items-center justify-center md:mb-12">
       <div className="flex main-title-all">
@@ -97,7 +100,7 @@ const Intro = () => {
         style={{ color: "rgb(71 27 5)" }}
         className="music-description text-center md:text-left text-lg"
       >
-        Intimate & Groovy Original Music
+        {versions.subtitle[language]}
       </h4>
       {/* <h5 className="london">London</h5> */}
     </section>

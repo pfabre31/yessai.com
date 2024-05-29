@@ -19,7 +19,7 @@ export const versions = {
         "Nous sommes un groupe de musique indépendant  basé à Londres dont les membres viennent des quatre coins de l'Europe.",
         "Quatre musiciens professionnels dont les carrières respectives nous ont menées jusqu'à vers des lieux mythiques tels que la Nouvelle Orléans, le Carnegie Hall à New York, le Montreux Jazz Festival ou encore les studios Abbey Road",
         "Notre répertoire, constitué essentiellement de compositions, est un mélange de Neo Soul, Jazz, Funk, Pop et Hip Hop. C'est une musique à la fois intense, douce, et électrisante, à l'image de notre premier EP qui verra le jour en Septembre 2024.",
-        "Notre communauté, notre indépendance et notre liberté artistique complète constituent le coeur de ce projet.",
+        "Notre communauté, notre indépendance et notre liberté artistique constituent le coeur de ce projet.",
       ],
     },
   },
@@ -45,8 +45,22 @@ export const versions = {
       ],
     },
   },
-  articlelabel: { EN: "Go to the article", FR: "Aller à l'article" },
+  gallery: { EN: "Gallery", FR: "Galerie" },
+
   ticketslabel: { EN: "Get Tickets", FR: "Obtenir des billets" },
+  status: {
+    booked: { EN: "booked", FR: "Confirmé" },
+    indiscussion: { EN: "In Discussion", FR: "En Discussion" },
+  },
+  press: {
+    EN: { title: "Press", label: "Go to the article" },
+    FR: { title: "Presse", label: "Consulter l'article" },
+  },
+  more: { EN: "More", FR: "Plus" },
+  upcominghomeshows: {
+    EN: "Upcoming Home Shows",
+    FR: "Prochaines Dates Locales",
+  },
   months: {
     January: {
       EN: "January",
