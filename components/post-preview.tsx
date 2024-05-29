@@ -1,8 +1,10 @@
-import DateFormatter from "./date-formatter";
+import DateFormatter, { DateFormatterString } from "./date-formatter";
 import CoverImage from "./cover-image";
-import type Author from "../interfaces/author";
 import Video from "./youtube-video";
 import CustomCarousel from "./custom-carousel";
+import { dateTranslator } from "../utils";
+import { useContext } from "react";
+import { LanguageContext } from "../context/language";
 
 type Props = {
   type:
@@ -37,6 +39,7 @@ const PostPreview = ({
   pressUrl,
   status,
 }: Props) => {
+  const { language, setLanguage } = useContext(LanguageContext);
   return (
     <div
       className={
@@ -78,7 +81,15 @@ const PostPreview = ({
                 ~{" "}
               </div>
             )}
-            {<DateFormatter dateString={date} />}
+
+            {language === "EN" ? (
+              <DateFormatter dateString={date}></DateFormatter>
+            ) : (
+              dateTranslator(
+                DateFormatterString({ dateString: date }).replace(/\s+/g, " "),
+                language
+              )
+            )}
           </div>
         ))}
       {ticketUrl && (

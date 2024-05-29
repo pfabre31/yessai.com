@@ -5,7 +5,7 @@ import { Language } from "../pages";
 // UserContext: to query the context state
 // UserDispatchContext: to mutate the context state
 export const LanguageContext = createContext({
-  language: "ENG",
+  language: "EN" as Language,
   setLanguage: (l: Language) => {},
 });
 // const StateDispatchContext = createContext(undefined);
