@@ -27,6 +27,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yesteryear&display=swap");
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 @keyframes flicker {
   0%,
@@ -214,4 +215,17 @@ html {
 
 .bubble-icon {
   font-size: 0.8rem;
+}
+
+.lang-picker {
+  font-family: "type-machine", "oswald", "Verdana", sans-serif;
+  font-size: 1.3rem;
+}
+
+.underlined {
+  color: blue;
+}
+
+.language-label:hover {
+  cursor: pointer;
 }

@@ -1,5 +1,3 @@
-import { CMS_NAME } from "../lib/constants";
-
 const Intro = () => {
   return (
     <section className="h-screen gap-8 flex-col flex items-center justify-center md:mb-12">
