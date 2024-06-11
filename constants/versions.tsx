@@ -39,7 +39,7 @@ export const versions = {
       subtitle: "Tournée de l'Amour - 2024",
       content: [
         "Notre but en tant que musiciens est de toucher notre public aussi directement et sincèrement que possible.",
-        "Dans cette optique,  chaque année, nous embarquons pour notre Tournée de l'Amour dans le but de ressérer les liens avec notre communauté.",
+        "Dans cette optique, chaque année, nous embarquons pour notre Tournée de l'Amour dans le but de ressérer les liens avec notre communauté.",
         "De l'Angleterre à l'Andalousie en passant par la France, l'Italie et l'Autriche; nous parcourons l'Europe pour partager notre amour de la musique et agrandir chaque fois notre communauté.",
         "Contactez-nous pour faire partie de l'édition 2024 ! ",
       ],

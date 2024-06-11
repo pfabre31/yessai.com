@@ -25,13 +25,13 @@ const HeroPost = ({
     <section>
       <div className="intro-photo">
         <CoverImage
-          title="Omeara, Nov. 2023"
-          src="/assets/photos/mol_bw.jpg"
+          title="Sofar, June. 2024"
+          src="/assets/photos/sofar-cover-comp.jpg"
         ></CoverImage>
         <div className="intro-photo-info flex justify-between">
-          <div className="intro-photo-title m-3">{`Dublin Castle, ${
-            ["EN", "ES"].includes(language) ? "Feb" : "Fév"
-          }. 2024`}</div>
+          <div className="intro-photo-title m-3">{`Sofar Sounds London, ${
+            ["EN", "ES"].includes(language) ? "June" : "Juin"
+          } 2024`}</div>
           <div className="intro-photo-credits m-3 text-end">@Aśya</div>
         </div>
       </div>
@@ -42,7 +42,7 @@ const HeroPost = ({
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
-          src={"https://www.youtube.com/embed/zRuFIMjuxnI"}
+          src={"https://www.youtube.com/embed/ctGnMgJTZFA"}
           slug={slug}
           type={"main-video"}
         />

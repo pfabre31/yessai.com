@@ -9,7 +9,9 @@ type Props = {
 };
 
 const UpcomingShows = ({ posts, language }: Props) => {
-  return (
+  return posts.length === 0 ? (
+    <></>
+  ) : (
     <section className="mb-10 mt-10">
       <h2
         style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
