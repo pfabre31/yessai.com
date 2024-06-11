@@ -26,17 +26,17 @@ export const versions = {
   touroflove: {
     EN: {
       maintitle: "Tour",
-      subtitle: "Tour of Love - 2024",
+      subtitle: "Love Tour - 2024",
       content: [
         "As musicians, our aim is to touch people as directly and sincerely as we can.",
-        "Each year, we embark on our Tour of Love across Europe to tighten our community.",
+        "Each year, we embark on our Love Tour across Europe to tighten our community.",
         "From England to Spain, France, Italy and Austria; we sail accross Europe to spread our love for music and unite even more people around ours.",
         "Get in touch to be part of the 2024 edition !",
       ],
     },
     FR: {
       maintitle: "Tournée",
-      subtitle: "Tournée de l'Amour - 2024",
+      subtitle: "Love Tour - 2024",
       content: [
         "Notre but en tant que musiciens est de toucher notre public aussi directement et sincèrement que possible.",
         "Dans cette optique, chaque année, nous embarquons pour notre Tournée de l'Amour dans le but de ressérer les liens avec notre communauté.",
