@@ -4,8 +4,8 @@ const Footer = () => {
       <div className="contact-title mb-8">CONTACT</div>{" "}
       <div className="insta-block">
         {/* <img src={"/assets/icons/icon-insta.svg"} className="mail-logo"></img> */}
-        <div className="insta-text text-center">@DDLLMUSIC</div>
         <div className="insta-text">@MASTERSOFLOVEOFFICIAL</div>
+        <div className="insta-text text-center">@DDLLMUSIC</div>
       </div>
       <div className="mail-block">
         {" "}

@@ -16,6 +16,7 @@ import AboutUs from "../components/aboutus";
 import LanguageSwitcher from "../components/language-switcher";
 import { useState } from "react";
 import { LanguageContext } from "../context/language";
+import Listen from "../components/listen";
 
 type Props = {
   allPosts: Post[];
@@ -52,6 +53,7 @@ export default function Index({ allPosts }: Props) {
               language={language as any}
             />
           )}
+          <Listen language={language}></Listen>
           <AboutUs posts={morePosts} language={language}></AboutUs>
           {morePosts.length > 0 && (
             <UpcomingShows
