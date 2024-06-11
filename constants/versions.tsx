@@ -17,7 +17,7 @@ export const versions = {
       title: "À Propos de Nous",
       content: [
         "Nous sommes un groupe de musique indépendant  basé à Londres dont les membres viennent des quatre coins de l'Europe.",
-        "Quatre musiciens professionnels dont les carrières respectives nous ont menés jusqu'à vers des lieux mythiques tels que la Nouvelle Orléans, le Carnegie Hall à New York, le Montreux Jazz Festival ou encore les studios Abbey Road.",
+        "Quatre musiciens professionnels dont les carrières respectives nous ont menés jusque des lieux mythiques tels que la Nouvelle Orléans, le Carnegie Hall à New York, le Montreux Jazz Festival ou encore les studios Abbey Road.",
         "Notre répertoire, constitué essentiellement de compositions, est un mélange de Neo Soul, Jazz, Funk, Pop et Hip Hop. C'est une musique à la fois intense, douce, et électrisante, à l'image de notre premier EP qui verra le jour en Septembre 2024.",
         "Notre communauté, notre indépendance et notre liberté artistique constituent le coeur de ce projet.",
       ],
