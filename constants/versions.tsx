@@ -26,22 +26,20 @@ export const versions = {
   touroflove: {
     EN: {
       maintitle: "Tour",
-      subtitle: "Love Tour - 2024",
+      subtitle: "Love Mastery Tour #1",
       content: [
         "As musicians, our aim is to touch people as directly and sincerely as we can.",
-        "Each year, we embark on our Love Tour across Europe to tighten our community.",
-        "From England to Spain, France, Italy and Austria; we sail accross Europe to spread our love for music and unite even more people around ours.",
-        "Get in touch to be part of the 2024 edition !",
+        "In September 2024, we will embark on our first european tour across Europe to tighten our community.",
+        "From England to Spain, France, Italy and Austria; we will sail accross Europe to spread our love for music and unite even more people around ours.",
       ],
     },
     FR: {
       maintitle: "Tournée",
-      subtitle: "Love Tour - 2024",
+      subtitle: "Love Mastery Tour #1",
       content: [
         "Notre but en tant que musiciens est de toucher notre public aussi directement et sincèrement que possible.",
-        "Dans cette optique, chaque année, nous embarquons pour notre Tournée de l'Amour dans le but de ressérer les liens avec notre communauté.",
-        "De l'Angleterre à l'Andalousie en passant par la France, l'Italie et l'Autriche; nous parcourons l'Europe pour partager notre amour de la musique et agrandir chaque fois notre communauté.",
-        "Contactez-nous pour faire partie de l'édition 2024 ! ",
+        "Dans cette optique, fin Septembre 2024, nous embarquerons pour notre première tournée européenne dans le but de ressérer les liens avec notre communauté.",
+        "De l'Angleterre à l'Andalousie en passant par la France, l'Italie et l'Autriche; nous parcourerons l'Europe pour partager notre amour de la musique et agrandir chaque fois notre communauté.",
       ],
     },
   },
@@ -49,7 +47,7 @@ export const versions = {
 
   ticketslabel: { EN: "Get Tickets", FR: "Obtenir des billets" },
   status: {
-    booked: { EN: "booked", FR: "Confirmé" },
+    booked: { EN: "Booked", FR: "Confirmé" },
     indiscussion: { EN: "In Discussion", FR: "En Discussion" },
   },
   press: {
@@ -67,6 +65,7 @@ export const versions = {
     spain: { EN: "Spain", FR: "Espagne" },
     sevilla: { EN: "Sevilla", FR: "Séville" },
     uk: { EN: "UK", FR: "Royaume-Uni" },
+    austria: { EN: "Austria", FR: "Autriche" },
   },
   months: {
     January: {

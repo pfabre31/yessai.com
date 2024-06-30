@@ -1,7 +1,7 @@
 ---
 type: "tour-of-love"
 media: null
-title: "Bressanone, Italy"
+title: "Insbruck, Austria"
 excerpt: "2 - Duo Show in Bressanone, Italy"
 coverImages: null
 videoSrc: ""

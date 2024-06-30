@@ -15,7 +15,7 @@ export const placeTranslator = (placeName: string, targetLang: Language) => {
   if (["London", "Sevilla"].includes(place1))
     place1 = versions.places[place1.toLowerCase()][targetLang];
   let place2 = placeName.split(", ")[1];
-  if (["Italy", "Spain", "London"].includes(place2))
+  if (["Italy", "Spain", "London", "Austria"].includes(place2))
     place2 = versions.places[place2.toLowerCase().trim()][targetLang];
 
   return `${place1}, ${place2}`;
