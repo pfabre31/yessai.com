@@ -143,18 +143,31 @@ html {
   font-size: 3.5vh;
 }
 
+.shine-coasty-outline-glow {
+  font-family: "shine-coasty", "Yesteryear", "oswald", "Verdana", sans-serif;
+  -webkit-text-stroke: rgb(95 76 17) 1px;
+  text-shadow: 2px 2px 18px rgb(189 156 55 / 16%);
+  color: rgba(0, 0, 0, 0);
+  font-size: 3.5vh;
+}
+
 .video-block {
   margin-top: 10vh;
   margin-bottom: 13vh !important;
 }
 
 .section-title {
-  font-family: "shine-coasty", "Oswald", "Verdana", sans-serif;
+  // font-family: "shine-coasty", "Oswald", "Verdana", sans-serif;
   font-size: 2rem;
   font-weight: 100;
   text-align: center;
   margin-bottom: 5rem;
   margin-top: 4rem;
+  font-family: "shine-coasty", "Yesteryear", "oswald", "Verdana", sans-serif;
+  -webkit-text-stroke: rgb(121 97 23) 1px;
+  text-shadow: 2px 2px 18px rgb(189 156 55 / 16%);
+  color: rgba(0, 0, 0, 0);
+  font-size: 3.5vh;
 }
 .subsection-title {
   font-family: "shine-coasty", "Oswald", "Verdana", sans-serif;

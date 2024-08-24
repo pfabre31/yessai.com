@@ -117,5 +117,5 @@ export const versions = {
       FR: "Décembre",
     },
   },
-  listen: { title: { EN: "Listen on", FR: "Nous écouter" } },
+  listen: { title: { EN: "low key out now !", FR: "Écouter low key sur" } },
 };

@@ -70,13 +70,13 @@ const Intro = ({ language }) => {
         <div className="flex main-title-word">
           {" "}
           <div
-            style={{ color: "#8515d500" /*"#670ed5"*/ }}
+            style={{ color: "#8515d500" /*"#670ed5"*/, marginRight: "0.2rem" }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
             L
           </div>
           <div
-            style={{ color: "#89141400", marginRight: "0.1rem" }}
+            style={{ color: "#89141400" }}
             className="flicker-fast main-title2 red-o text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
             o

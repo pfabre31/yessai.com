@@ -12,7 +12,7 @@ const MoreVideos = ({ posts, language }: Props) => {
   return (
     <section className="mb-10 mt-10">
       <h2
-        style={{ color: "rgb(141 54 11)" /*"#cb87e7" "#f3e0fb;"*/ }}
+        style={{ color: "rgba(141,54,11,0)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
         {versions.more[language]}

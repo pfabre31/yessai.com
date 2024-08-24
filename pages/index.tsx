@@ -42,6 +42,7 @@ export default function Index({ allPosts }: Props) {
         <Container>
           <LanguageSwitcher></LanguageSwitcher>
           <Intro language={language as any} />
+          <Listen language={language}></Listen>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -53,7 +54,7 @@ export default function Index({ allPosts }: Props) {
               language={language as any}
             />
           )}
-          <Listen language={language}></Listen>
+
           <AboutUs posts={morePosts} language={language}></AboutUs>
           {morePosts.length > 0 && (
             <UpcomingShows
@@ -61,12 +62,12 @@ export default function Index({ allPosts }: Props) {
               posts={morePosts.filter((p) => p.type === "upcoming-show")}
             />
           )}
-          {morePosts.length > 0 && (
+          {/* {morePosts.length > 0 && (
             <TourOfLove
               language={language as any}
               posts={morePosts.filter((p) => p.type === "tour-of-love")}
             />
-          )}
+          )} */}
 
           {morePosts.length > 0 && (
             <PastShows
@@ -80,12 +81,12 @@ export default function Index({ allPosts }: Props) {
               posts={morePosts.filter((p) => p.type === "press-element")}
             />
           )}
-          {morePosts.length > 0 && (
+          {/* {morePosts.length > 0 && (
             <MoreVideos
               language={language as any}
               posts={morePosts.filter((p) => p.type === "more-videos")}
             />
-          )}
+          )} */}
         </Container>
       </Layout>
     </LanguageContext.Provider>
