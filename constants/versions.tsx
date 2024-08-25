@@ -7,19 +7,15 @@ export const versions = {
     EN: {
       title: "About us",
       content: [
-        "We're a four-piece pan-European independent band based in London, United Kingdom.",
-        "Four high-end musicians whose careers have taken us to New Orleans, New York's Carnegie Hall, Montreux Jazz Festival or Abbey Road Studios.",
-        "Our music, composed primarly of original songs, is a blend of Neo Soul, Jazz, Funk, Pop and Hip Hop. It's intense, smooth, and electrifying all at once, just like our debut EP coming out in September 2024.",
-        "We believe in community, independence, and total artistic freedom.",
+        "Masters of Love is an independent original musical project based in London. Our music blends ethereal synths, intimate neo soul grooves, jazz fusion madness, and each of our show is designed as an immersive, celestial experience. Our first single 'low key' is out now; our voyage can truly begin.",
+        "Welcome on board 🚀",
       ],
     },
     FR: {
       title: "À Propos de Nous",
       content: [
-        "Nous sommes un groupe de musique indépendant  basé à Londres dont les membres viennent des quatre coins de l'Europe.",
-        "Quatre musiciens professionnels dont les carrières respectives nous ont menés jusque des lieux mythiques tels que la Nouvelle Orléans, le Carnegie Hall à New York, le Montreux Jazz Festival ou encore les studios Abbey Road.",
-        "Notre répertoire, constitué essentiellement de compositions, est un mélange de Neo Soul, Jazz, Funk, Pop et Hip Hop. C'est une musique à la fois intense, douce, et électrisante, à l'image de notre premier EP qui verra le jour en Septembre 2024.",
-        "Notre communauté, notre indépendance et notre liberté artistique constituent le coeur de ce projet.",
+        "Nous sommes un groupe de musique indépendant basé à Londres. Notre musique mélange neo-soul, synthétiseurs lunaires, impros jazz fusion, et chacun de nos concerts est pensé comme une expérience immersive, céleste. Notre premier single 'low key' est disponible; notre voyage peut commencer.",
+        "Bienvenu à bord 🚀",
       ],
     },
   },
