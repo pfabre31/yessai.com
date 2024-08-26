@@ -183,6 +183,25 @@ html {
   color: #6e10b1 !important;
 }
 
+.ticket-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px rgb(121 97 23);
+  margin-top: 5rem;
+  color: rgb(121 97 23);
+  border-radius: 1rem;
+  -webkit-text-stroke: rgb(5, 5, 5) !important;
+  text-shadow: none !important;
+}
+
+.ticket-button:hover {
+  color: rgba(255, 255, 255, 0.74);
+  border: solid 2px white;
+  -webkit-text-stroke: rgb(5, 5, 5) !important;
+  text-shadow: none !important;
+}
+
 .gig-preview {
   margin: auto;
   text-align: center;
