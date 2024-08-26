@@ -17,18 +17,26 @@ const AboutUs = ({ posts, language }: Props) => {
       >
         {versions.aboutus[language].title}
       </h2>
-      <p className="artist-description">
-        {versions.aboutus[language].content[0]}
+      <div className="artist-description">
+        <b className="colored-sentence">
+          {versions.aboutus[language].description[0]}
+        </b>
+        {versions.aboutus[language].description[1]}
         <br></br>
         <br></br>
-        {versions.aboutus[language].content[1]}
-        <br></br>
-        <br></br>
-        {versions.aboutus[language].content[2]}
-        <br></br>
-        <br></br>
-        {versions.aboutus[language].content[3]}
-      </p>
+        <div>
+          <b className="colored-sentence">
+            {versions.aboutus[language].description[2]}{" "}
+          </b>{" "}
+          {versions.aboutus[language].description[3]}
+          <br></br>
+        </div>
+        <br></br>{" "}
+        <b className="colored-sentence">
+          {versions.aboutus[language].description[4]}{" "}
+        </b>{" "}
+        {versions.aboutus[language].description[5]}
+      </div>
     </section>
   );
 };

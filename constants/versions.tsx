@@ -6,36 +6,50 @@ export const versions = {
   aboutus: {
     EN: {
       title: "About us",
-      content: [
-        "Masters of Love is an independent original musical project based in London. Our music blends ethereal synths, intimate neo soul grooves, jazz fusion madness, and each of our show is designed as an immersive, celestial experience. Our first single 'low key' is out now; our voyage can truly begin.",
-        "Welcome on board 🚀",
+      description: [
+        "we're 4. ",
+        "M Sagz, Pr. Hox, Dr. Al Figgiz and DDLL.",
+        "resourceful. ",
+        "from music to graphic design, event production to branding. we like to do things our way.",
+        "adventurous. ",
+        "we try stuff. we hit the road. welcome onboard. ",
       ],
     },
     FR: {
       title: "À Propos de Nous",
-      content: [
-        "Nous sommes un groupe de musique indépendant basé à Londres. Notre musique mélange neo-soul, synthétiseurs lunaires, impros jazz fusion, et chacun de nos concerts est pensé comme une expérience immersive, céleste. Notre premier single 'low key' est disponible; notre voyage peut commencer.",
-        "Bienvenu à bord 🚀",
+      description: [
+        "on est 4. ",
+        "M Sagz, Pr. Hox, Dr. Al Figgiz et DDLL.",
+        "plein de resources. ",
+        "de la musique au graphisme, de la production de concerts au développement web. on aime quand les choses sont faites maison.",
+        "aventureux. ",
+        "on essaye des trucs. on prend la route. bienvenus à bord.",
       ],
     },
   },
-  touroflove: {
+  lowkeytour: {
     EN: {
       maintitle: "Tour",
-      subtitle: "Love Mastery Tour #1",
-      content: [
-        "As musicians, our aim is to touch people as directly and sincerely as we can.",
-        "In September 2024, we will embark on our first european tour across Europe to tighten our community.",
-        "From England to Spain, France, Italy and Austria; we will sail accross Europe to spread our love for music and unite even more people around ours.",
+      subtitle: "low key Tour",
+      description: [
+        "independent. ",
+        "no agent, booking agency or record label. self-financed.",
+        "eclectic. ",
+        "Our music combines intimate neo-soul grooves, ethereal '80s synths, and the wild energy of jazz fusion. all smoothly blended together.",
+        "immersive. ",
+        "our shows feature our own music-synced lighting system, costumes and staging. each one is designed as a fully immersive experience.",
       ],
     },
     FR: {
       maintitle: "Tournée",
-      subtitle: "Love Mastery Tour #1",
-      content: [
-        "Notre but en tant que musiciens est de toucher notre public aussi directement et sincèrement que possible.",
-        "Dans cette optique, fin Septembre 2024, nous embarquerons pour notre première tournée européenne dans le but de ressérer les liens avec notre communauté.",
-        "De l'Angleterre à l'Andalousie en passant par la France, l'Italie et l'Autriche; nous parcourerons l'Europe pour partager notre amour de la musique et agrandir chaque fois notre communauté.",
+      subtitle: "low key Tour",
+      description: [
+        "indépendant. ",
+        "pas d'agent, ni de label. auto-financé.",
+        "éclectique. ",
+        "Notre musique allie la douceur de la neo-soul, des synthétiseurs planants et l'énergie sauvage du jazz fusion.",
+        "immersif. ",
+        "Nos spectacles incluent notre propre scénographie, système d'éclairage et costumes. Chaque représentation est conçue comme une expérience immersive complète.",
       ],
     },
   },

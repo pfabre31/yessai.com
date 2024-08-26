@@ -1,5 +1,5 @@
 ---
-type: "past-show"
+type: null
 media: "video"
 title: "The Moustache Bar, London"
 excerpt: "3 - Sold out show at the Moustache Bar, Dalston"

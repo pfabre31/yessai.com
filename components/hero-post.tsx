@@ -29,7 +29,7 @@ const HeroPost = ({
         style={{ color: "rgba(141,54,11,0)" /*"#cb87e7" "#f3e0fb;"*/ }}
         className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
       >
-        {versions.touroflove[language].maintitle}
+        {versions.lowkeytour[language].maintitle}
       </h2>
       <div className="intro-photo">
         <CoverImage
@@ -47,11 +47,31 @@ const HeroPost = ({
         "Just sit back and let these guys take over your heart."<br></br>
         The Love Post
       </div> */}{" "}
+      <div className="artist-description">
+        <b className="colored-sentence">
+          {versions.lowkeytour[language].description[0]}
+        </b>
+        {versions.lowkeytour[language].description[1]}
+        <br></br>
+        <br></br>
+        <div>
+          <b className="colored-sentence">
+            {versions.lowkeytour[language].description[2]}{" "}
+          </b>{" "}
+          {versions.lowkeytour[language].description[3]}
+          <br></br>
+        </div>
+        <br></br>{" "}
+        <b className="colored-sentence">
+          {versions.lowkeytour[language].description[4]}{" "}
+        </b>{" "}
+        {versions.lowkeytour[language].description[5]}
+      </div>
       <a href="https://events.mastersoflovemusic.com" target="_blank">
         <button className="ticket-button bg-transparent text-white font-bold py-2 px-4 rounded section-title">
-          Get your tickets
+          {versions.ticketslabel[language]}
         </button>
-      </a>
+      </a>{" "}
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}

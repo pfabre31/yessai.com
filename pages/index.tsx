@@ -9,7 +9,7 @@ import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
 import StudioOuttakes from "../components/studio-outtakes";
 import UpcomingShows from "../components/upcoming-shows";
-import TourOfLove from "../components/touroflove";
+import LowkeyTour from "../components/lowkeytour";
 import MoreVideos from "../components/more-videos";
 import Press from "../components/press";
 import AboutUs from "../components/aboutus";
@@ -53,8 +53,13 @@ export default function Index({ allPosts }: Props) {
               ticketUrl={heroPost.ticketUrl}
               language={language as any}
             />
-          )}
-
+          )}{" "}
+          {/* {morePosts.length > 0 && (
+            <LowkeyTour
+              language={language as any}
+              posts={morePosts.filter((p) => p.type === "tour-of-love")}
+            />
+          )} */}
           <AboutUs posts={morePosts} language={language}></AboutUs>
           {morePosts.length > 0 && (
             <UpcomingShows
@@ -62,13 +67,6 @@ export default function Index({ allPosts }: Props) {
               posts={morePosts.filter((p) => p.type === "upcoming-show")}
             />
           )}
-          {/* {morePosts.length > 0 && (
-            <TourOfLove
-              language={language as any}
-              posts={morePosts.filter((p) => p.type === "tour-of-love")}
-            />
-          )} */}
-
           {morePosts.length > 0 && (
             <PastShows
               language={language}
