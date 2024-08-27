@@ -49,6 +49,12 @@ const HeroPost = ({
       </div> */}{" "}
       <div className="artist-description">
         <b className="colored-sentence">
+          {versions.lowkeytour[language].subtitle[0]}
+        </b>
+        {versions.lowkeytour[language].subtitle[1]}
+        <br></br>
+        <br></br>
+        <b className="colored-sentence">
           {versions.lowkeytour[language].description[0]}
         </b>
         {versions.lowkeytour[language].description[1]}

@@ -17,6 +17,7 @@ import LanguageSwitcher from "../components/language-switcher";
 import { useState } from "react";
 import { LanguageContext } from "../context/language";
 import Listen from "../components/listen";
+import MailingListSub from "../components/mailinglistsub";
 
 type Props = {
   allPosts: Post[];
@@ -60,7 +61,11 @@ export default function Index({ allPosts }: Props) {
               posts={morePosts.filter((p) => p.type === "tour-of-love")}
             />
           )} */}
-          <AboutUs posts={morePosts} language={language}></AboutUs>
+          <AboutUs posts={morePosts} language={language}></AboutUs>{" "}
+          <MailingListSub
+            posts={morePosts}
+            language={language}
+          ></MailingListSub>
           {morePosts.length > 0 && (
             <UpcomingShows
               language={language as any}

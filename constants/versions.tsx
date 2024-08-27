@@ -27,22 +27,32 @@ export const versions = {
       ],
     },
   },
+  mailinglist: {
+    EN: {
+      title: "Stay in touch ?",
+      buttonLabel: "Subscribe to our mailing list",
+    },
+    FR: {
+      title: "On reste en contact ?",
+      buttonLabel: "S'abonner à notre newsletter",
+    },
+  },
   lowkeytour: {
     EN: {
       maintitle: "Tour",
-      subtitle: "low key Tour",
+      subtitle: ["low key. ", "our first europe tour."],
       description: [
         "independent. ",
         "no agent, booking agency or record label. self-financed.",
         "eclectic. ",
-        "Our music combines intimate neo-soul grooves, ethereal '80s synths, and the wild energy of jazz fusion. all smoothly blended together.",
+        "our music combines intimate neo-soul grooves, ethereal '80s synths, and the wild energy of jazz fusion. all smoothly blended together.",
         "immersive. ",
         "our shows feature our own music-synced lighting system, costumes and staging. each one is designed as a fully immersive experience.",
       ],
     },
     FR: {
       maintitle: "Tournée",
-      subtitle: "low key Tour",
+      subtitle: ["low key ", "tour"],
       description: [
         "indépendant. ",
         "pas d'agent, ni de label. auto-financé.",
