@@ -40,10 +40,10 @@ export const versions = {
   lowkeytour: {
     EN: {
       maintitle: "Tour",
-      subtitle: ["low key. ", "our first europe tour."],
+      subtitle: ["low key. ", "our first european tour."],
       description: [
         "independent. ",
-        "no agent, booking agency or record label. self-financed.",
+        "no agent, booking agency or record label. self-funded.",
         "eclectic. ",
         "our music combines intimate neo-soul grooves, ethereal '80s synths, and the wild energy of jazz fusion. all smoothly blended together.",
         "immersive. ",

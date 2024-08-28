@@ -36,12 +36,12 @@ const HeroPost = ({
           title=""
           src="/assets/photos/lowkey_tour_poster.png"
         ></CoverImage>
-        <div className="intro-photo-info flex justify-between">
+        {/* <div className="intro-photo-info flex justify-between">
           <div className="intro-photo-title m-3">{`Sofar Sounds London, ${
             ["EN", "ES"].includes(language) ? "June" : "Juin"
           } 2024`}</div>
           <div className="intro-photo-credits m-3 text-end">@Aśya</div>
-        </div>
+        </div> */}
       </div>
       {/* <div className="artist-description">
         "Just sit back and let these guys take over your heart."<br></br>
