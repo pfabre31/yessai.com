@@ -52,7 +52,7 @@ export const versions = {
     },
     FR: {
       maintitle: "Tournée",
-      subtitle: ["low key ", "tour"],
+      subtitle: ["low key. ", "notre première tournée. européenne."],
       description: [
         "indépendant. ",
         "pas d'agent, ni de label. auto-financé.",
