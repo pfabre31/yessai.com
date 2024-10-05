@@ -9,96 +9,29 @@ const Intro = ({ language }) => {
           {" "}
           <div
             style={{ color: "#8515d500" /*"#670ed5"*/ }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
           >
-            M
+            D
           </div>
           <div
             style={{ color: "#89141400" }}
-            className="flicker-fast main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+            className="flicker-fast main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
           >
-            a
+            D
           </div>
           <div
             style={{
               color: "rgba(109,30,163,0)" /*"#8515d5"*/,
             }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            s
-          </div>
-          <div
-            style={{ color: "rgb(51,8,105,0)" /*"#8515d5" "#670ed5"*/ }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            t
-          </div>
-          <div
-            style={{ color: "#89141400" }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            e
-          </div>
-          <div
-            style={{ color: "rgba(51,8,105,00)" /*"#8515d5" "#670ed5"*/ }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            r
-          </div>
-          <div
-            style={{ color: "rgba(51,8,105,0)" /*"#8515d5" "#670ed5"*/ }}
-            className="flicker-slow main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            s
-          </div>
-        </div>
-        <div className="flex main-title-word">
-          {" "}
-          <div
-            style={{ color: "#89141400" }}
-            className="main-title1 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            O
-          </div>
-          <div
-            style={{ color: "#89141400" }}
-            className="main-title1 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            f
-          </div>
-        </div>
-        <div className="flex main-title-word">
-          {" "}
-          <div
-            style={{ color: "#8515d500" /*"#670ed5"*/, marginRight: "0.2rem" }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
+            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
           >
             L
           </div>
           <div
-            style={{ color: "#89141400" }}
-            className="flicker-fast main-title2 red-o text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            o
-          </div>
-          {/* <div>
-            {" "}
-            <img
-              src="/assets/icons/pixel-heart.svg"
-              className="red-heart"
-            ></img>
-          </div> */}
-          <div
             style={{ color: "rgb(51,8,105,0)" /*"#8515d5" "#670ed5"*/ }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
-            v
-          </div>
-          <div
-            style={{ color: "#8515d500" /*"#670ed5"*/ }}
-            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
-          >
-            e
+            L
           </div>
         </div>
       </div>

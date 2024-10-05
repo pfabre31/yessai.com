@@ -43,7 +43,7 @@ export default function Index({ allPosts }: Props) {
         <Container>
           <LanguageSwitcher></LanguageSwitcher>
           <Intro language={language as any} />
-          <Listen language={language}></Listen>
+          {/* <Listen language={language}></Listen> */}
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -61,7 +61,7 @@ export default function Index({ allPosts }: Props) {
               posts={morePosts.filter((p) => p.type === "tour-of-love")}
             />
           )} */}
-          <AboutUs posts={morePosts} language={language}></AboutUs>{" "}
+          {/* <AboutUs posts={morePosts} language={language}></AboutUs>{" "} */}
           <MailingListSub
             posts={morePosts}
             language={language}
@@ -76,12 +76,6 @@ export default function Index({ allPosts }: Props) {
             <PastShows
               language={language}
               posts={morePosts.filter((p) => p.type === "past-show")}
-            />
-          )}
-          {morePosts.length > 0 && (
-            <Press
-              language={language as any}
-              posts={morePosts.filter((p) => p.type === "press-element")}
             />
           )}
           {/* {morePosts.length > 0 && (

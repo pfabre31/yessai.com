@@ -25,17 +25,8 @@ const HeroPost = ({
   return (
     <section>
       {" "}
-      <h2
-        style={{ color: "rgba(141,54,11,0)" /*"#cb87e7" "#f3e0fb;"*/ }}
-        className="section-title mb-10 text-5xl md:text-7xl font-bold tracking-tighter leading-tight"
-      >
-        {versions.lowkeytour[language].maintitle}
-      </h2>
       <div className="intro-photo">
-        <CoverImage
-          title=""
-          src="/assets/photos/lowkey_tour_poster.png"
-        ></CoverImage>
+        <CoverImage title="" src="/assets/photos/halfmoon-1.jpg"></CoverImage>
         {/* <div className="intro-photo-info flex justify-between">
           <div className="intro-photo-title m-3">{`Sofar Sounds London, ${
             ["EN", "ES"].includes(language) ? "June" : "Juin"
@@ -47,7 +38,7 @@ const HeroPost = ({
         "Just sit back and let these guys take over your heart."<br></br>
         The Love Post
       </div> */}{" "}
-      <div className="artist-description">
+      {/* <div className="artist-description">
         <b className="colored-sentence">
           {versions.lowkeytour[language].subtitle[0]}
         </b>
@@ -77,11 +68,11 @@ const HeroPost = ({
         <button className="ticket-button bg-transparent text-white font-bold py-2 px-4 rounded section-title">
           {versions.ticketslabel[language]}
         </button>
-      </a>{" "}
+      </a>{" "} */}
       <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
-          src={"https://www.youtube.com/embed/ctGnMgJTZFA"}
+          src={"https://www.youtube.com/embed/Vz8vlxQ7elA"}
           slug={slug}
           type={"main-video"}
         />
