@@ -11,13 +11,13 @@ const Intro = ({ language }) => {
             style={{ color: "#8515d500" /*"#670ed5"*/ }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
           >
-            D
+            Y
           </div>
           <div
             style={{ color: "#89141400" }}
             className="flicker-fast main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
           >
-            D
+            E
           </div>
           <div
             style={{
@@ -25,13 +25,25 @@ const Intro = ({ language }) => {
             }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
           >
-            L
+            S
           </div>
+          <div
+            style={{ color: "rgb(51,8,105,0)" /*"#8515d5" "#670ed5"*/ }}
+            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
+          >
+            S
+          </div>{" "}
+          <div
+            style={{ color: "rgb(51,8,105,0)" /*"#8515d5" "#670ed5"*/ }}
+            className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight mr-2"
+          >
+            A
+          </div>{" "}
           <div
             style={{ color: "rgb(51,8,105,0)" /*"#8515d5" "#670ed5"*/ }}
             className="main-title2 text-5xl md:text-8xl font-bold tracking-tighter leading-tight"
           >
-            L
+            Ï
           </div>
         </div>
       </div>

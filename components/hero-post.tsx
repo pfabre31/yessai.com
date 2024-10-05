@@ -26,7 +26,10 @@ const HeroPost = ({
     <section>
       {" "}
       <div className="intro-photo">
-        <CoverImage title="" src="/assets/photos/halfmoon-1.jpg"></CoverImage>
+        <CoverImage
+          title=""
+          src="/assets/photos/miniature_bus_bw.png"
+        ></CoverImage>
         {/* <div className="intro-photo-info flex justify-between">
           <div className="intro-photo-title m-3">{`Sofar Sounds London, ${
             ["EN", "ES"].includes(language) ? "June" : "Juin"
@@ -69,14 +72,14 @@ const HeroPost = ({
           {versions.ticketslabel[language]}
         </button>
       </a>{" "} */}
-      <div className="mb-8 md:mb-16 video-block">
+      {/* <div className="mb-8 md:mb-16 video-block">
         <Video
           title={title}
           src={"https://www.youtube.com/embed/Vz8vlxQ7elA"}
           slug={slug}
           type={"main-video"}
         />
-      </div>
+      </div> */}
     </section>
   );
 };

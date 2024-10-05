@@ -66,18 +66,18 @@ export default function Index({ allPosts }: Props) {
             posts={morePosts}
             language={language}
           ></MailingListSub>
-          {morePosts.length > 0 && (
+          {/* {morePosts.length > 0 && (
             <UpcomingShows
               language={language as any}
               posts={morePosts.filter((p) => p.type === "upcoming-show")}
             />
-          )}
-          {morePosts.length > 0 && (
-            <PastShows
-              language={language}
-              posts={morePosts.filter((p) => p.type === "past-show")}
-            />
-          )}
+          )} */}
+          {/* {morePosts.length > 0 && (
+              <PastShows
+                language={language}
+                posts={morePosts.filter((p) => p.type === "past-show")}
+              />
+            )} */}
           {/* {morePosts.length > 0 && (
             <MoreVideos
               language={language as any}
