@@ -28,7 +28,7 @@ const HeroPost = ({
       <div className="intro-photo">
         <CoverImage
           title=""
-          src="/assets/photos/miniature_bus_bw.png"
+          src="/assets/photos/bus_website_white_notrail.svg"
         ></CoverImage>
         {/* <div className="intro-photo-subtitle">yessaï.</div> */}
         {/* <div className="intro-photo-info flex justify-between">
