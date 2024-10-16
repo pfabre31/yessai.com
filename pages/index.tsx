@@ -38,7 +38,7 @@ export default function Index({ allPosts }: Props) {
     <LanguageContext.Provider value={value as any}>
       <Layout>
         <Head>
-          <title>Masters of Love</title>
+          <title>Yessaï</title>
         </Head>
         <Container>
           <LanguageSwitcher></LanguageSwitcher>
