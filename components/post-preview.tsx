@@ -36,6 +36,7 @@ const PostPreview = ({
   type,
   media,
   title,
+  rank,
   coverImages,
   videoSrc,
   date,

@@ -1,21 +1,13 @@
 import Container from "../components/container";
 import Links from "../components/links";
 import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
-import UpcomingShows from "../components/upcoming-shows";
-import LowkeyTour from "../components/lowkeytour";
-import MoreVideos from "../components/more-videos";
-import Press from "../components/press";
-import AboutUs from "../components/aboutus";
 import LanguageSwitcher from "../components/language-switcher";
 import { useState } from "react";
 import { LanguageContext } from "../context/language";
-import Listen from "../components/listen";
 import MailingListSub from "../components/mailinglistsub";
 
 type Props = {

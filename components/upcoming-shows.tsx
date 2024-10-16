@@ -38,6 +38,7 @@ const UpcomingShows = ({ posts, language }: Props) => {
               ticketUrl={post.ticketUrl}
               pressUrl={null}
               language={language}
+              rank={post.rank}
             />
           ))}
       </div>
