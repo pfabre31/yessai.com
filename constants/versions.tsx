@@ -63,7 +63,7 @@ export const versions = {
       ],
     },
   },
-  gallery: { EN: "Gallery", FR: "Galerie" },
+  hometitle: { EN: "music. lights. clothes. Yessaï.", FR: "Galerie" },
 
   ticketslabel: { EN: "Get Tickets", FR: "Obtenir des billets" },
   status: {
