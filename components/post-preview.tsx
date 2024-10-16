@@ -10,6 +10,7 @@ import { versions } from "../constants/versions";
 
 type Props = {
   type:
+    | "link"
     | "past-show"
     | "studio-outtake"
     | "upcoming-show"
@@ -17,6 +18,7 @@ type Props = {
     | "more-videos"
     | "press-element";
   media: "video" | "photo";
+  rank: number;
   title: string;
   coverImages: string[];
   videoSrc: string;
@@ -27,6 +29,7 @@ type Props = {
   pressUrl: string;
   status?: string;
   language?: Language;
+  linkTo?: string;
 };
 
 const PostPreview = ({
@@ -42,6 +45,7 @@ const PostPreview = ({
   pressUrl,
   status,
   language,
+  linkTo,
 }: Props) => {
   return (
     <div
@@ -59,6 +63,8 @@ const PostPreview = ({
             src={coverImages[0]}
             type={type}
             pressUrl={pressUrl}
+            ticketUrl={ticketUrl}
+            linkTo={linkTo}
           />
         ) : media === "video" ? (
           <Video title={title} src={videoSrc} slug={slug} type={type}></Video>
@@ -68,11 +74,9 @@ const PostPreview = ({
           <></>
         )}
       </div>
-      {type !== "studio-outtake" && (
-        <h3 className="text-3xl mb-3 leading-snug post-title">
-          {type === "press-element" ? title : placeTranslator(title, language)}
-        </h3>
-      )}
+
+      <h3 className="text-3xl mb-3 leading-snug post-title">{`${title}. ${excerpt}.`}</h3>
+
       {type === "past-show" ||
         ((type === "upcoming-show" || type === "tour-of-love") && (
           <div className="text-lg mb-4 date">

@@ -56,6 +56,7 @@ export async function getStaticProps({ params }: Params) {
     "title",
     "type",
     "videoSrc",
+    "rank",
     "date",
     "slug",
     "content",
@@ -64,6 +65,7 @@ export async function getStaticProps({ params }: Params) {
     "ticketUrl",
     "pressUrl",
     "status",
+    "linkTo",
   ]);
   const content = await markdownToHtml(post.content || "");
 

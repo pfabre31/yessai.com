@@ -8,9 +8,18 @@ type Props = {
   slug?: string;
   type?: string;
   pressUrl?: string;
+  ticketUrl?: string;
+  linkTo?: string;
 };
 
-const CoverImage = ({ title, src, slug = null, type, pressUrl }: Props) => {
+const CoverImage = ({
+  title,
+  ticketUrl,
+  src,
+  slug = null,
+  type,
+  linkTo,
+}: Props) => {
   const image = (
     <Image
       src={src}
@@ -29,8 +38,8 @@ const CoverImage = ({ title, src, slug = null, type, pressUrl }: Props) => {
   );
   return (
     <div className="sm:mx-0">
-      {type === "something" ? (
-        <Link as={`src`} href={src} aria-label={title}>
+      {type === "link" ? (
+        <Link href={linkTo} aria-label={title}>
           {image}
         </Link>
       ) : (

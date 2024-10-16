@@ -2,6 +2,7 @@ import type Author from "./author";
 
 type PostType = {
   type:
+    | "link"
     | "past-show"
     | "studio-outtake"
     | "upcoming-show"
@@ -11,6 +12,7 @@ type PostType = {
   media: "video" | "photo";
   slug: string;
   title: string;
+  rank: number;
   date: string;
   coverImages: string[];
   videoSrc: string;
@@ -19,6 +21,7 @@ type PostType = {
   ticketUrl: string | null;
   pressUrl: string | null;
   status?: string;
+  linkTo?: string;
 };
 
 export default PostType;

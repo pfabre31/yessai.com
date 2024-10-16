@@ -1,5 +1,5 @@
 import Container from "../components/container";
-import PastShows from "../components/past-shows";
+import Links from "../components/links";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
@@ -7,7 +7,6 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
-import StudioOuttakes from "../components/studio-outtakes";
 import UpcomingShows from "../components/upcoming-shows";
 import LowkeyTour from "../components/lowkeytour";
 import MoreVideos from "../components/more-videos";
@@ -42,7 +41,7 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <Container>
           <LanguageSwitcher></LanguageSwitcher>
-          <Intro language={language as any} />
+          {/* <Intro language={language as any} /> */}
           {/* <Listen language={language}></Listen> */}
           {heroPost && (
             <HeroPost
@@ -62,6 +61,12 @@ export default function Index({ allPosts }: Props) {
             />
           )} */}
           {/* <AboutUs posts={morePosts} language={language}></AboutUs>{" "} */}
+          {morePosts.length > 0 && (
+            <Links
+              language={language}
+              posts={morePosts.filter((p) => p.type === "link")}
+            />
+          )}
           <MailingListSub
             posts={morePosts}
             language={language}
@@ -72,12 +77,6 @@ export default function Index({ allPosts }: Props) {
               posts={morePosts.filter((p) => p.type === "upcoming-show")}
             />
           )} */}
-          {/* {morePosts.length > 0 && (
-              <PastShows
-                language={language}
-                posts={morePosts.filter((p) => p.type === "past-show")}
-              />
-            )} */}
           {/* {morePosts.length > 0 && (
             <MoreVideos
               language={language as any}
@@ -95,6 +94,7 @@ export const getStaticProps = async () => {
     "type",
     "media",
     "videoSrc",
+    "rank",
     "title",
     "date",
     "slug",
@@ -103,6 +103,7 @@ export const getStaticProps = async () => {
     "ticketUrl",
     "pressUrl",
     "status",
+    "linkTo",
   ]);
 
   return {

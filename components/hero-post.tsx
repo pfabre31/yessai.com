@@ -30,6 +30,7 @@ const HeroPost = ({
           title=""
           src="/assets/photos/miniature_bus_bw.png"
         ></CoverImage>
+        {/* <div className="intro-photo-subtitle">yessaï.</div> */}
         {/* <div className="intro-photo-info flex justify-between">
           <div className="intro-photo-title m-3">{`Sofar Sounds London, ${
             ["EN", "ES"].includes(language) ? "June" : "Juin"
