@@ -177,7 +177,7 @@ html {
   font-family: "type-machine", "shine-coasty", "Yesteryear", "oswald", "Verdana",
     sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.6rem !important;
 }
 .subsection-title {
   font-family: "shine-coasty", "Oswald", "Verdana", sans-serif;
@@ -242,8 +242,8 @@ html {
 
 .intro-photo {
   max-width: 80vw;
-  min-width: 22vw;
-  width: 9rem;
+  min-width: 12vw;
+  width: 6rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
