@@ -9,6 +9,9 @@ import LanguageSwitcher from "../components/language-switcher";
 import { useState } from "react";
 import { LanguageContext } from "../context/language";
 import MailingListSub from "../components/mailinglistsub";
+import Listen from "../components/listen";
+import YessaiPass from "../components/yessaipass";
+import YessaiPassSub from "../components/yessaipasssub";
 
 type Props = {
   allPosts: Post[];
@@ -34,7 +37,6 @@ export default function Index({ allPosts }: Props) {
         <Container>
           <LanguageSwitcher></LanguageSwitcher>
           {/* <Intro language={language as any} /> */}
-          {/* <Listen language={language}></Listen> */}
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -46,6 +48,9 @@ export default function Index({ allPosts }: Props) {
               language={language as any}
             />
           )}{" "}
+          <Listen language={language}></Listen>
+          <YessaiPass language={language}></YessaiPass>{" "}
+          <YessaiPassSub language={language}></YessaiPassSub>
           {/* {morePosts.length > 0 && (
             <LowkeyTour
               language={language as any}

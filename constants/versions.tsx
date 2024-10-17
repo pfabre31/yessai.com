@@ -64,8 +64,8 @@ export const versions = {
     },
   },
   hometitle: {
-    EN: "music. lights. clothing. Yessaï.",
-    FR: "musique. lumière. mode. Yessaï. ",
+    EN: "music. lights. clothing. yessaï.",
+    FR: "musique. lumière. mode. yessaï. ",
   },
 
   ticketslabel: { EN: "Get Tickets", FR: "Obtenir des billets" },
@@ -141,4 +141,32 @@ export const versions = {
     },
   },
   listen: { title: { EN: "low key out now !", FR: "Écouter low key sur" } },
+  yessaipass: {
+    title: {
+      EN: "Get your yessaï pass for 1£ / month ",
+      FR: "Abonnes toi au pass yessaï pour 1 € / mois",
+    },
+    buttonLabel: {
+      EN: "let's gooooo",
+      FR: "Allez ça part",
+    },
+    benefits: {
+      EN: [
+        "30% off all low key items.",
+        "30% off every upcoming show.",
+        "exclusive content : unreleased songs & videos.",
+        "get added to ddll " +
+          "and masters of love instagram close friends for" +
+          "crunchy content.",
+      ],
+      FR: [
+        "30% sur tous les articles low key",
+        "30% sur tous les prochains concerts",
+        "contenu exclusif : chansons & vidéos non publiées ",
+        "ajouté aux amis proches instagram " +
+          "de ddll & masters of love pour du contenu " +
+          "croustillant",
+      ],
+    },
+  },
 };

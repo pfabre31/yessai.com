@@ -1,5 +1,3 @@
-import Video from "./youtube-video";
-import type Author from "../interfaces/author";
 import CoverImage from "./cover-image";
 import { Language } from "../pages";
 import { versions } from "../constants/versions";
@@ -14,14 +12,7 @@ type Props = {
   language: Language;
 };
 
-const HeroPost = ({
-  title,
-  coverImages,
-  date,
-  excerpt,
-  slug,
-  language,
-}: Props) => {
+const HeroPost = ({ language }: Props) => {
   return (
     <section className="h-screen flex justify-center flex-col">
       {" "}
