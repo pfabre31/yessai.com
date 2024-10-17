@@ -3,7 +3,7 @@ type: "link"
 media: "photo"
 title: "ddll"
 excerpt: "solo"
-coverImages: ["/assets/photos/halfmoon-1-compressed.jpg"]
+coverImages: ["/assets/photos/halfmoon-1.jpg"]
 videoSrc: null
 date: null
 ticketUrl: null

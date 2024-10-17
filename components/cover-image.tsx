@@ -20,6 +20,7 @@ const CoverImage = ({
   type,
   linkTo,
 }: Props) => {
+  console.log(src);
   const image = (
     <Image
       src={src}
